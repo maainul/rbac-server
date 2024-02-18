@@ -10,6 +10,7 @@ const router = Router()
 // AUTH
 router.post('/signin', controller.authCtrl.signinCtrl)
 router.post('/signup', controller.authCtrl.signupCtrl)
+router.get('/signout', controller.authCtrl.signoutCtrl)
 router.get('/get-current-user', authMiddleware, controller.authCtrl.currentUserCtrl)
 
 

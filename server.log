@@ -740,3 +740,33 @@
 2024-02-18T07:05:25.624Z info: User found:
 2024-02-18T07:05:25.628Z info: User found:
 2024-02-18T07:05:25.628Z info: Validation Result
+2024-02-18T07:12:34.151Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:12:34.186Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:13:24.048Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:13:24.083Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:13:50.177Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:13:50.218Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:13:58.278Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:13:58.318Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:14:00.315Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:14:00.355Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:14:29.818Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:14:29.860Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:14:57.919Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:14:57.964Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:15:38.520Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:15:38.558Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:16:21.768Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:16:21.804Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:17:01.973Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:17:02.026Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:17:30.374Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:17:30.416Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:17:33.877Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:17:33.919Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:18:00.451Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:18:00.497Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:18:19.533Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:18:19.577Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:18:52.470Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:18:52.510Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m

@@ -30,6 +30,7 @@ const validationRules = {
 
 export const signupCtrl = async (req, res) => {
   logger.info("Signup Controller Started");
+
   try {
     // Validation
     logger.info("Validation Started");
@@ -38,16 +39,17 @@ export const signupCtrl = async (req, res) => {
       validationRules,
       UserModel
     );
+
     // Validation log
     logger.info("Validation Result");
     if (!validationResult.isValid) {
-
       return res.status(201).send({
         success: true,
         message: "Validation Failed",
         errors: validationResult.errors,
       });
     }
+
     //Registration Service Call
     logger.info("Signup Service Start");
     const user = await SignupUserService(req.body);

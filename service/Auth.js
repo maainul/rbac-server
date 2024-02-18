@@ -11,6 +11,7 @@ export const SignupUserService = async (body) => {
         logger.info('Signup Service Hashed Password Start.........')
         const hashedPassword = await hashPassword(password)
         logger.info(`Signup Service Hashed Password End with info : ${hashedPassword}`)
+
         // Save Data in Database
         logger.info(`Save Into Database start..........`)
         const user = await saveToDb(UserModel, {
@@ -18,20 +19,21 @@ export const SignupUserService = async (body) => {
             username,
             password: hashedPassword,
         })
+
         logger.info(`Save Into Database end with info`)
         logger.info(user)
-        logger.info(`User Added Successfully`)
+        console.log("User Added Successfully .... ".bgGreen)
         return {
             success: true,
             message: "User Added Successfully",
             data: user
         }
     } catch (error) {
-        logger.info(`User Not Added Successfully`)
+        console.log("User Not Added Successfully.....".bgRed)
         return {
             success: false,
             message: "Internal Server Error",
-            data: {}
+            data: error
         }
     }
 }

@@ -1,2 +1,82 @@
 2024-02-18T01:18:37.043Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
 2024-02-18T01:18:37.802Z info: [37m[45mConneted To Mongodb Databse ac-0ms6p2z-shard-00-00.ywqaoub.mongodb.net[49m[39m
+2024-02-18T01:22:02.644Z info: Signup Controller Started
+2024-02-18T01:22:02.645Z info: Validation Started
+2024-02-18T01:22:02.701Z info: User found:
+2024-02-18T01:22:02.702Z info: User with name user2@gmail.com not Found
+2024-02-18T01:22:02.751Z info: User found:
+2024-02-18T01:22:02.752Z info: User with name user2 not Found
+2024-02-18T01:22:02.752Z info: Validation Result
+2024-02-18T01:22:02.752Z info: Signup Service Start
+2024-02-18T01:22:02.753Z info: Signup Service Called.......................................
+2024-02-18T01:22:02.753Z info: Signup Service Hashed Password Start.........
+2024-02-18T01:22:02.753Z info: Method : hashPassword() - Create Hash Password
+2024-02-18T01:22:02.833Z info: $2b$10$z3l.egzTJ1pT4rDRWTGLGO.fsfGlej6FuKSn/8iVFlthNUvu1UHFu
+2024-02-18T01:22:02.833Z info: Method : hashPassword() - Returned Successfull
+2024-02-18T01:22:02.834Z info: Signup Service Hashed Password End with info : $2b$10$z3l.egzTJ1pT4rDRWTGLGO.fsfGlej6FuKSn/8iVFlthNUvu1UHFu
+2024-02-18T01:22:02.834Z info: Save Into Database start..........
+2024-02-18T01:22:02.909Z info: Save Into Database end with info
+2024-02-18T01:22:02.909Z info: {
+  email: 'user2@gmail.com',
+  username: 'user2',
+  password: '$2b$10$z3l.egzTJ1pT4rDRWTGLGO.fsfGlej6FuKSn/8iVFlthNUvu1UHFu',
+  role: 'user',
+  _id: new ObjectId('65d15bba10243e65c22c8982'),
+  createdAt: 2024-02-18T01:22:02.842Z,
+  updatedAt: 2024-02-18T01:22:02.842Z,
+  __v: 0
+}
+2024-02-18T01:22:02.916Z info: User Added Successfully
+2024-02-18T01:22:02.917Z info: Signup Service End
+2024-02-18T01:22:02.917Z info: User Registration Successfully
+2024-02-18T01:22:58.449Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T01:22:59.163Z info: [37m[45mConneted To Mongodb Databse ac-0ms6p2z-shard-00-00.ywqaoub.mongodb.net[49m[39m
+2024-02-18T01:23:37.002Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T01:23:37.747Z info: [37m[45mConneted To Mongodb Databse ac-0ms6p2z-shard-00-00.ywqaoub.mongodb.net[49m[39m
+2024-02-18T01:23:40.865Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T01:23:41.587Z info: [37m[45mConneted To Mongodb Databse ac-0ms6p2z-shard-00-00.ywqaoub.mongodb.net[49m[39m
+2024-02-18T01:25:07.095Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T01:25:07.834Z info: [37m[45mConneted To Mongodb Databse ac-0ms6p2z-shard-00-00.ywqaoub.mongodb.net[49m[39m
+2024-02-18T01:25:13.969Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T01:25:14.718Z info: [37m[45mConneted To Mongodb Databse ac-0ms6p2z-shard-00-00.ywqaoub.mongodb.net[49m[39m
+2024-02-18T01:25:25.987Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T01:25:26.745Z info: [37m[45mConneted To Mongodb Databse ac-0ms6p2z-shard-00-00.ywqaoub.mongodb.net[49m[39m
+2024-02-18T01:25:32.363Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T01:25:33.147Z info: [37m[45mConneted To Mongodb Databse ac-0ms6p2z-shard-00-00.ywqaoub.mongodb.net[49m[39m
+2024-02-18T01:25:37.112Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T01:25:37.817Z info: [37m[45mConneted To Mongodb Databse ac-0ms6p2z-shard-00-00.ywqaoub.mongodb.net[49m[39m
+2024-02-18T01:25:48.243Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T01:25:48.991Z info: [37m[45mConneted To Mongodb Databse ac-0ms6p2z-shard-00-00.ywqaoub.mongodb.net[49m[39m
+2024-02-18T01:25:55.983Z info: Signup Controller Started
+2024-02-18T01:25:55.984Z info: Validation Started
+2024-02-18T01:25:56.050Z info: User found:
+2024-02-18T01:25:56.106Z info: User found:
+2024-02-18T01:25:56.108Z info: Validation Result
+2024-02-18T01:26:11.998Z info: Signup Controller Started
+2024-02-18T01:26:11.998Z info: Validation Started
+2024-02-18T01:26:12.054Z info: User found:
+2024-02-18T01:26:12.055Z info: User with name user1@gmail.com not Found
+2024-02-18T01:26:12.112Z info: User found:
+2024-02-18T01:26:12.113Z info: User with name user1 not Found
+2024-02-18T01:26:12.114Z info: Validation Result
+2024-02-18T01:26:12.114Z info: Signup Service Start
+2024-02-18T01:26:12.115Z info: Signup Service Called.......................................
+2024-02-18T01:26:12.116Z info: Signup Service Hashed Password Start.........
+2024-02-18T01:26:12.116Z info: Method : hashPassword() - Create Hash Password
+2024-02-18T01:26:12.196Z info: $2b$10$wT7RAkud9LUKaMGfVbkeeOiJ5h4y7zmeaC48Qp.hMo1IeicZ7wi9e
+2024-02-18T01:26:12.197Z info: Method : hashPassword() - Returned Successfull
+2024-02-18T01:26:12.198Z info: Signup Service Hashed Password End with info : $2b$10$wT7RAkud9LUKaMGfVbkeeOiJ5h4y7zmeaC48Qp.hMo1IeicZ7wi9e
+2024-02-18T01:26:12.198Z info: Save Into Database start..........
+2024-02-18T01:26:12.267Z info: Save Into Database end with info
+2024-02-18T01:26:12.268Z info: {
+  email: 'user1@gmail.com',
+  username: 'user1',
+  password: '$2b$10$wT7RAkud9LUKaMGfVbkeeOiJ5h4y7zmeaC48Qp.hMo1IeicZ7wi9e',
+  role: 'user',
+  _id: new ObjectId('65d15cb49e679291e27602fe'),
+  createdAt: 2024-02-18T01:26:12.205Z,
+  updatedAt: 2024-02-18T01:26:12.205Z,
+  __v: 0
+}
+2024-02-18T01:26:12.272Z info: Signup Service End
+2024-02-18T01:26:12.272Z info: User Registration Successfully

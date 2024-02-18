@@ -80,3 +80,239 @@
 }
 2024-02-18T01:26:12.272Z info: Signup Service End
 2024-02-18T01:26:12.272Z info: User Registration Successfully
+2024-02-18T04:01:25.233Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:01:55.794Z info: [37m[41mErrro in Mongodb MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/[49m[39m
+2024-02-18T04:08:52.479Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:09:17.018Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:09:47.732Z info: [37m[41mErrro in Mongodb MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/[49m[39m
+2024-02-18T04:11:05.230Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:11:36.628Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:11:39.797Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:12:10.516Z info: [37m[41mErrro in Mongodb MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/[49m[39m
+2024-02-18T04:15:42.817Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:15:42.862Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:18:16.182Z info: Signup Controller Started
+2024-02-18T04:18:16.182Z info: Validation Started
+2024-02-18T04:18:16.202Z info: User found:
+2024-02-18T04:18:16.202Z info: User with name user1 not Found
+2024-02-18T04:18:16.203Z info: Validation Result
+2024-02-18T04:18:40.927Z info: Signup Controller Started
+2024-02-18T04:18:40.928Z info: Validation Started
+2024-02-18T04:18:40.930Z info: User found:
+2024-02-18T04:18:40.931Z info: User with name user1@gmail.com not Found
+2024-02-18T04:18:40.932Z info: User found:
+2024-02-18T04:18:40.933Z info: User with name user1 not Found
+2024-02-18T04:18:40.933Z info: Validation Result
+2024-02-18T04:18:40.933Z info: Signup Service Start
+2024-02-18T04:18:40.934Z info: Signup Service Called.......................................
+2024-02-18T04:18:40.934Z info: Signup Service Hashed Password Start.........
+2024-02-18T04:18:40.935Z info: Method : hashPassword() - Create Hash Password
+2024-02-18T04:18:41.004Z info: $2b$10$gj4yC4zc0v/5ieEqNhymg.P.5lYScdT/P0o4LDJx6QmxGPuJQZTVa
+2024-02-18T04:18:41.006Z info: Method : hashPassword() - Returned Successfull
+2024-02-18T04:18:41.006Z info: Signup Service Hashed Password End with info : $2b$10$gj4yC4zc0v/5ieEqNhymg.P.5lYScdT/P0o4LDJx6QmxGPuJQZTVa
+2024-02-18T04:18:41.007Z info: Save Into Database start..........
+2024-02-18T04:18:41.032Z info: Save Into Database end with info
+2024-02-18T04:18:41.032Z info: {
+  email: 'user1@gmail.com',
+  username: 'user1',
+  password: '$2b$10$gj4yC4zc0v/5ieEqNhymg.P.5lYScdT/P0o4LDJx6QmxGPuJQZTVa',
+  role: 'user',
+  _id: new ObjectId('65d185211638e985081949da'),
+  createdAt: 2024-02-18T04:18:41.019Z,
+  updatedAt: 2024-02-18T04:18:41.019Z,
+  __v: 0
+}
+2024-02-18T04:18:41.037Z info: Signup Service End
+2024-02-18T04:18:41.037Z info: User Registration Successfully
+2024-02-18T04:24:43.941Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:24:43.978Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:24:55.856Z info: Signup Controller Started
+2024-02-18T04:24:55.856Z info: Validation Started
+2024-02-18T04:24:55.866Z info: User found:
+2024-02-18T04:24:55.868Z info: User found:
+2024-02-18T04:24:55.869Z info: Validation Result
+2024-02-18T04:25:15.188Z info: Signup Controller Started
+2024-02-18T04:25:15.188Z info: Validation Started
+2024-02-18T04:25:15.190Z info: User found:
+2024-02-18T04:25:15.190Z info: User with name user2@gmail.com not Found
+2024-02-18T04:25:15.192Z info: User found:
+2024-02-18T04:25:15.192Z info: User with name user2 not Found
+2024-02-18T04:25:15.193Z info: Validation Result
+2024-02-18T04:25:15.193Z info: Signup Service Start
+2024-02-18T04:25:15.194Z info: Signup Service Called.......................................
+2024-02-18T04:25:15.195Z info: Signup Service Hashed Password Start.........
+2024-02-18T04:25:15.195Z info: Method : hashPassword() - Create Hash Password
+2024-02-18T04:25:15.254Z info: $2b$10$BF8JhoZgrXCJsC2jvEW0kO7E4mKMBh4W8ErF5tnK6b2Qhey0QvxeG
+2024-02-18T04:25:15.255Z info: Method : hashPassword() - Returned Successfull
+2024-02-18T04:25:15.255Z info: Signup Service Hashed Password End with info : $2b$10$BF8JhoZgrXCJsC2jvEW0kO7E4mKMBh4W8ErF5tnK6b2Qhey0QvxeG
+2024-02-18T04:25:15.255Z info: Save Into Database start..........
+2024-02-18T04:25:15.267Z info: Save Into Database end with info
+2024-02-18T04:25:15.268Z info: {
+  email: 'user2@gmail.com',
+  username: 'user2',
+  password: '$2b$10$BF8JhoZgrXCJsC2jvEW0kO7E4mKMBh4W8ErF5tnK6b2Qhey0QvxeG',
+  role: 'user',
+  _id: new ObjectId('65d186ab519fd5e9488dcc57'),
+  createdAt: 2024-02-18T04:25:15.260Z,
+  updatedAt: 2024-02-18T04:25:15.260Z,
+  __v: 0
+}
+2024-02-18T04:25:15.271Z info: Signup Service End
+2024-02-18T04:25:15.272Z info: User Registration Successfully
+2024-02-18T04:25:24.887Z info: Signup Controller Started
+2024-02-18T04:25:24.887Z info: Validation Started
+2024-02-18T04:25:24.889Z info: User found:
+2024-02-18T04:25:24.891Z info: User found:
+2024-02-18T04:25:24.891Z info: Validation Result
+2024-02-18T04:25:28.104Z info: Signup Controller Started
+2024-02-18T04:25:28.104Z info: Validation Started
+2024-02-18T04:25:28.106Z info: User found:
+2024-02-18T04:25:28.107Z info: Validation Result
+2024-02-18T04:25:32.649Z info: Signup Controller Started
+2024-02-18T04:25:32.649Z info: Validation Started
+2024-02-18T04:25:32.651Z info: User found:
+2024-02-18T04:25:32.652Z info: Validation Result
+2024-02-18T04:25:40.118Z info: Signup Controller Started
+2024-02-18T04:25:40.119Z info: Validation Started
+2024-02-18T04:25:40.119Z info: Validation Result
+2024-02-18T04:25:46.674Z info: Signup Controller Started
+2024-02-18T04:25:46.675Z info: Validation Started
+2024-02-18T04:25:46.676Z info: Validation Result
+2024-02-18T04:30:34.092Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:30:34.129Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:31:15.866Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:31:15.902Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:31:21.173Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:31:21.208Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:32:03.871Z info: Signup Controller Started
+2024-02-18T04:32:03.872Z info: Validation Started
+2024-02-18T04:32:03.879Z info: User found:
+2024-02-18T04:32:03.881Z info: User with name user3@gmail.com not Found
+2024-02-18T04:32:03.884Z info: User found:
+2024-02-18T04:32:03.885Z info: User with name user3 not Found
+2024-02-18T04:32:03.885Z info: Validation Result
+2024-02-18T04:32:03.886Z info: Signup Service Start
+2024-02-18T04:32:03.887Z info: Signup Service Called.......................................
+2024-02-18T04:32:03.888Z info: Signup Service Hashed Password Start.........
+2024-02-18T04:32:03.889Z info: Method : hashPassword() - Create Hash Password
+2024-02-18T04:32:03.955Z info: $2b$10$3hyprDbsdde0iHHcTj6AducTxYwxiXo7jIl.mGz7ttFEozQ0vw4FC
+2024-02-18T04:32:03.956Z info: Method : hashPassword() - Returned Successfull
+2024-02-18T04:32:03.957Z info: Signup Service Hashed Password End with info : $2b$10$3hyprDbsdde0iHHcTj6AducTxYwxiXo7jIl.mGz7ttFEozQ0vw4FC
+2024-02-18T04:32:03.958Z info: Save Into Database start..........
+2024-02-18T04:32:03.977Z info: Save Into Database end with info
+2024-02-18T04:32:03.977Z info: {
+  email: 'user3@gmail.com',
+  username: 'user3',
+  password: '$2b$10$3hyprDbsdde0iHHcTj6AducTxYwxiXo7jIl.mGz7ttFEozQ0vw4FC',
+  role: 'user',
+  _id: new ObjectId('65d188431acef7d3d81f5ff9'),
+  createdAt: 2024-02-18T04:32:03.972Z,
+  updatedAt: 2024-02-18T04:32:03.972Z,
+  __v: 0
+}
+2024-02-18T04:32:03.984Z info: Signup Service End
+2024-02-18T04:32:03.985Z info: User Registration Successfully
+2024-02-18T04:32:36.069Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:32:36.107Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:32:43.648Z info: Signup Controller Started
+2024-02-18T04:32:43.648Z info: Validation Started
+2024-02-18T04:32:43.656Z info: User found:
+2024-02-18T04:32:43.659Z info: User found:
+2024-02-18T04:32:43.659Z info: Validation Result
+2024-02-18T04:33:03.002Z info: Signup Controller Started
+2024-02-18T04:33:03.002Z info: Validation Started
+2024-02-18T04:33:03.004Z info: User found:
+2024-02-18T04:33:03.004Z info: User with name user4@gmail.com not Found
+2024-02-18T04:33:03.006Z info: User found:
+2024-02-18T04:33:03.006Z info: User with name user4 not Found
+2024-02-18T04:33:03.006Z info: Validation Result
+2024-02-18T04:33:03.006Z info: Signup Service Start
+2024-02-18T04:33:03.006Z info: Signup Service Called.......................................
+2024-02-18T04:33:03.007Z info: Signup Service Hashed Password Start.........
+2024-02-18T04:33:03.007Z info: Method : hashPassword() - Create Hash Password
+2024-02-18T04:33:03.065Z info: $2b$10$pS/OpPVO/gp/JsDfQD4mievGi2Drm8xy8YAR24WRg8t1j/zfN4veK
+2024-02-18T04:33:03.065Z info: Method : hashPassword() - Returned Successfull
+2024-02-18T04:33:03.066Z info: Signup Service Hashed Password End with info : $2b$10$pS/OpPVO/gp/JsDfQD4mievGi2Drm8xy8YAR24WRg8t1j/zfN4veK
+2024-02-18T04:33:03.066Z info: Save Into Database start..........
+2024-02-18T04:33:03.074Z info: Save Into Database end with info
+2024-02-18T04:33:03.075Z info: {
+  email: 'user4@gmail.com',
+  username: 'user4',
+  password: '$2b$10$pS/OpPVO/gp/JsDfQD4mievGi2Drm8xy8YAR24WRg8t1j/zfN4veK',
+  role: 'user',
+  _id: new ObjectId('65d1887f807e1d0901a539b6'),
+  createdAt: 2024-02-18T04:33:03.071Z,
+  updatedAt: 2024-02-18T04:33:03.071Z,
+  __v: 0
+}
+2024-02-18T04:33:03.080Z info: Signup Service End
+2024-02-18T04:33:03.081Z info: User Registration Successfully
+2024-02-18T04:34:07.723Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:34:07.763Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:34:10.881Z info: Signup Controller Started
+2024-02-18T04:34:10.881Z info: Validation Started
+2024-02-18T04:34:10.888Z info: User found:
+2024-02-18T04:34:10.891Z info: User found:
+2024-02-18T04:34:10.891Z info: Validation Result
+2024-02-18T04:35:35.809Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:35:35.850Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:35:38.589Z info: Signup Controller Started
+2024-02-18T04:35:38.589Z info: Validation Started
+2024-02-18T04:35:38.600Z info: User found:
+2024-02-18T04:35:38.602Z info: User found:
+2024-02-18T04:35:38.603Z info: Validation Result
+2024-02-18T04:44:33.955Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:44:33.993Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:44:48.762Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:44:48.808Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:45:02.083Z info: Signup Controller Started
+2024-02-18T04:45:02.084Z info: Validation Started
+2024-02-18T04:45:02.093Z info: User found:
+2024-02-18T04:45:02.095Z info: User found:
+2024-02-18T04:45:02.095Z info: Validation Result
+2024-02-18T04:45:25.461Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:45:25.501Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:45:38.122Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:45:38.161Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:45:41.009Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:45:41.047Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:45:42.962Z info: Signup Controller Started
+2024-02-18T04:45:42.962Z info: Validation Started
+2024-02-18T04:45:42.970Z info: User found:
+2024-02-18T04:45:42.973Z info: User found:
+2024-02-18T04:45:42.975Z info: Validation Result
+2024-02-18T04:46:08.758Z info: Signup Controller Started
+2024-02-18T04:46:08.758Z info: Validation Started
+2024-02-18T04:46:08.761Z info: User found:
+2024-02-18T04:46:08.762Z info: User found:
+2024-02-18T04:46:08.764Z info: Validation Result
+2024-02-18T04:46:15.549Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:46:15.590Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:46:21.128Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:46:21.172Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:48:19.083Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:48:19.122Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:48:20.687Z info: Signup Controller Started
+2024-02-18T04:48:20.687Z info: Validation Started
+2024-02-18T04:48:20.695Z info: User found:
+2024-02-18T04:48:20.702Z info: User found:
+2024-02-18T04:48:20.708Z info: Validation Result
+2024-02-18T04:48:32.547Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:48:32.588Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:48:34.833Z info: Signup Controller Started
+2024-02-18T04:48:34.833Z info: Validation Started
+2024-02-18T04:48:34.840Z info: User found:
+2024-02-18T04:48:34.843Z info: User found:
+2024-02-18T04:48:34.844Z info: Validation Result
+2024-02-18T04:49:04.657Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:49:04.698Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:49:07.920Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:49:07.960Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:49:22.359Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:49:22.398Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:49:25.143Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T04:49:25.179Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T04:49:27.546Z info: Signup Controller Started
+2024-02-18T04:49:27.547Z info: Validation Started
+2024-02-18T04:49:27.556Z info: User found:
+2024-02-18T04:49:27.559Z info: User found:

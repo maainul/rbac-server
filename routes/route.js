@@ -8,7 +8,8 @@ const router = Router()
 
 
 // USER
-router.use('/user', userRouter)
+router.use('/user', authMiddleware, userRouter)
+
 // AUTH
 router.use('/auth', authRouter)
 

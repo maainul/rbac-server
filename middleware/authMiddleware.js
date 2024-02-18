@@ -5,20 +5,23 @@ import { logger } from '../middleware/logMiddleware.js'
 // Protected Routes : Token Based
 export const authMiddleware = async (req, res, next) => {
     try {
-        const decode = JWT.verify(
-            req.headers.authorization,
-            process.env.JWT_SECRET
-        );
-        req.user = decode;
+        const token = req.cookies.token
+        if (!token) {
+            return res.status(401).json({
+                success: false,
+                message: 'Unauthorized',
+                error: "",
+            });
+        }
+        const verified = JWT.verify(token, process.env.JWT_SECRET);
+        req.user = verified.user;
         next();
     } catch (error) {
-        logger.info("Error From authMiddleware Start ......")
         logger.info(`Error Message.....\n ${error}`);
-        logger.info("Error From authMiddleware End.....")
         return res.status(401).json({
             success: false,
             message: 'Unauthorized',
-            error: error,
+            error: "",
         });
     }
 };

@@ -8,7 +8,7 @@ import colors from "colors";
 import connectDB from './config/connectDB.js';
 import routes from "./routes/route.js";
 import dotenv from "dotenv";
-
+import cookieParser from 'cookie-parser';
 
 //configure env
 dotenv.config()
@@ -45,8 +45,9 @@ const app = express()
 
 //middelwares
 app.use(cors())
-app.use(express.json());
 app.use(morgan('dev'))
+app.use(express.json())
+app.use(cookieParser())
 
 // Router
 app.use('/api/v1', routes)

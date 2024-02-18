@@ -1,7 +1,8 @@
 import { logger } from "../../middleware/logMiddleware.js";
 import UserModel from "../../models/User.js";
-import { SignupUserService } from "../../service/Auth.js";
+import { hashPassword } from "../../utils/authHelper.js";
 import MValidator from "../../validator/MValidator.js";
+import JWT from 'jsonwebtoken';
 
 // Validation Rules
 const validationRules = {
@@ -33,6 +34,7 @@ export const signupCtrl = async (req, res) => {
   try {
     // Validation
     logger.info("Validation Started");
+    const { username,email, password } = req.body;
     const validationResult = await MValidator(
       req.body,
       validationRules,
@@ -57,16 +59,32 @@ export const signupCtrl = async (req, res) => {
       });
     }
 
-    //Registration Service Call
-    logger.info("Signup Service Start");
-    const user = await SignupUserService(req.body);
-    logger.info("Signup Service End");
-    logger.info("User Registration Successfully");
-    return res.status(201).send({
-      success: user.success,
-      message: user.message,
-      data: "",
-    });
+    // HASH PASSWORD
+    const hashedPassword = await hashPassword(req.body.password)
+
+    // Save Data to DB
+    const newUser = new UserModel({
+      username,
+      email,
+      password: hashedPassword,
+    })
+    const savedUser  = await newUser.save()
+
+  // Sign the token
+  logger.info("Method : signin() - JWT Token Creation");
+  const jwt = process.env.JWT_SECRET;
+  const token = JWT.sign({ _id: savedUser ._id }, jwt, {expiresIn: "1d"});
+          
+ // send the token in a HTTP-only cookie
+  return res.cookie("token",token,{
+    httpOnly:true,
+    secure:true,
+    sameSite:"none"
+  }).send({
+    success:true,
+    message:"User Successfully Registered"
+  })
+
   } catch (error) {
     logger.error("Errror in Uer Registration");
     const status = error.status || 500;

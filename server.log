@@ -625,3 +625,118 @@
 2024-02-18T06:46:09.717Z info: Signin Successfull
 2024-02-18T06:46:30.633Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
 2024-02-18T06:46:30.670Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:50:13.186Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:50:13.224Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:52:49.085Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:52:49.121Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:53:03.109Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:53:03.145Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:53:46.017Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:53:46.054Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:53:50.639Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:53:50.685Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:54:19.613Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:54:19.651Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:55:11.282Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:55:11.317Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:55:27.331Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:55:27.370Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:55:30.705Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:55:30.745Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:55:32.955Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:55:32.997Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:55:35.651Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:55:35.687Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:58:34.027Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:58:34.065Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:58:41.166Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:58:41.206Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:59:23.769Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:59:23.813Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:59:33.572Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:59:33.612Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:59:48.621Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:59:48.658Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:00:00.478Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:00:00.515Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:00:34.955Z info: Signup Controller Started
+2024-02-18T07:00:34.955Z info: Validation Started
+2024-02-18T07:00:34.963Z info: User found:
+2024-02-18T07:00:34.966Z info: User found:
+2024-02-18T07:00:34.967Z info: Validation Result
+2024-02-18T07:00:44.042Z info: Signup Controller Started
+2024-02-18T07:00:44.042Z info: Validation Started
+2024-02-18T07:00:44.044Z info: User found:
+2024-02-18T07:00:44.046Z info: User found:
+2024-02-18T07:00:44.046Z info: Validation Result
+2024-02-18T07:00:51.545Z info: Signup Controller Started
+2024-02-18T07:00:51.545Z info: Validation Started
+2024-02-18T07:00:51.548Z info: User found:
+2024-02-18T07:00:51.548Z info: User with name user5@gmail.com not Found
+2024-02-18T07:00:51.550Z info: User found:
+2024-02-18T07:00:51.551Z info: User with name user5 not Found
+2024-02-18T07:00:51.551Z info: Validation Result
+2024-02-18T07:00:51.552Z error: Errror in Uer Registration
+2024-02-18T07:01:34.733Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:01:34.770Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:01:42.143Z info: Signup Controller Started
+2024-02-18T07:01:42.144Z info: Validation Started
+2024-02-18T07:01:42.150Z info: User found:
+2024-02-18T07:01:42.151Z info: User with name user5@gmail.com not Found
+2024-02-18T07:01:42.153Z info: User found:
+2024-02-18T07:01:42.154Z info: User with name user5 not Found
+2024-02-18T07:01:42.154Z info: Validation Result
+2024-02-18T07:01:42.155Z info: Method : hashPassword() - Create Hash Password
+2024-02-18T07:01:42.216Z info: $2b$10$XKv1Xm7Q1GX1mGBB5kjasumRSflvFbI6HY44A7f0QBgaL3CvhP7ma
+2024-02-18T07:01:42.217Z info: Method : hashPassword() - Returned Successfull
+2024-02-18T07:01:42.218Z error: Errror in Uer Registration
+2024-02-18T07:02:24.041Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:02:24.079Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:02:36.892Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:02:36.930Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:03:08.834Z info: Signup Controller Started
+2024-02-18T07:03:08.835Z info: Validation Started
+2024-02-18T07:03:08.842Z info: User found:
+2024-02-18T07:03:08.842Z info: User with name user1@gmail.com not Found
+2024-02-18T07:03:08.844Z info: User found:
+2024-02-18T07:03:08.845Z info: User with name user1 not Found
+2024-02-18T07:03:08.845Z info: Validation Result
+2024-02-18T07:03:08.846Z info: Method : hashPassword() - Create Hash Password
+2024-02-18T07:03:08.902Z info: $2b$10$43AAbo7q1HvKPF2UeQiPMOMGgkSyA6fOHAWF2n6txgZ1lGYs/tl4S
+2024-02-18T07:03:08.903Z info: Method : hashPassword() - Returned Successfull
+2024-02-18T07:03:08.903Z error: Errror in Uer Registration
+2024-02-18T07:03:32.277Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:03:32.319Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:03:37.295Z info: Signup Controller Started
+2024-02-18T07:03:37.296Z info: Validation Started
+2024-02-18T07:03:37.302Z info: User found:
+2024-02-18T07:03:37.303Z info: User with name user1@gmail.com not Found
+2024-02-18T07:03:37.307Z info: User found:
+2024-02-18T07:03:37.308Z info: User with name user1 not Found
+2024-02-18T07:03:37.308Z info: Validation Result
+2024-02-18T07:03:37.309Z info: Method : hashPassword() - Create Hash Password
+2024-02-18T07:03:37.365Z info: $2b$10$6ieapSLO8s5Q.hJei/bYsOorqzG1Yij0XsZ70DDIzzoF4ibc8g80q
+2024-02-18T07:03:37.366Z info: Method : hashPassword() - Returned Successfull
+2024-02-18T07:03:37.366Z error: Errror in Uer Registration
+2024-02-18T07:04:39.126Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:04:39.164Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:04:41.697Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:04:41.739Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:04:48.699Z info: Signup Controller Started
+2024-02-18T07:04:48.699Z info: Validation Started
+2024-02-18T07:04:48.706Z info: User found:
+2024-02-18T07:04:48.706Z info: User with name user1@gmail.com not Found
+2024-02-18T07:04:48.708Z info: User found:
+2024-02-18T07:04:48.709Z info: User with name user1 not Found
+2024-02-18T07:04:48.709Z info: Validation Result
+2024-02-18T07:04:48.709Z info: Method : hashPassword() - Create Hash Password
+2024-02-18T07:04:48.767Z info: $2b$10$dRhnFdunlq3o85hTFfgi5ul6d0y4woM31P7jx5KlPhrpp3vSFtn.e
+2024-02-18T07:04:48.768Z info: Method : hashPassword() - Returned Successfull
+2024-02-18T07:04:48.780Z info: Method : signin() - JWT Token Creation
+2024-02-18T07:05:22.100Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T07:05:22.137Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T07:05:25.612Z info: Signup Controller Started
+2024-02-18T07:05:25.613Z info: Validation Started
+2024-02-18T07:05:25.624Z info: User found:
+2024-02-18T07:05:25.628Z info: User found:
+2024-02-18T07:05:25.628Z info: Validation Result

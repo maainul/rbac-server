@@ -87,6 +87,8 @@ export const signinCtrl = async (req, res) => {
         // send the token in the HTTP-only 
         return res.cookie("token",token,{
             httpOnly:true,
+            secure:true,
+            sameSite:"none"
         }).send({
             success:true,
             message:"Signin Successfull"

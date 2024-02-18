@@ -316,3 +316,312 @@
 2024-02-18T04:49:27.547Z info: Validation Started
 2024-02-18T04:49:27.556Z info: User found:
 2024-02-18T04:49:27.559Z info: User found:
+2024-02-18T05:07:21.478Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T05:07:21.518Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T05:07:32.407Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T05:07:32.445Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T05:07:35.667Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T05:07:35.708Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T05:07:41.168Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T05:07:41.205Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T05:07:47.701Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T05:07:47.744Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T05:08:10.805Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T05:08:10.843Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T05:08:36.506Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T05:08:36.546Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T05:08:40.994Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T05:08:41.037Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T05:13:41.028Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T05:13:41.071Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T05:14:43.462Z info: Signup Controller Started
+2024-02-18T05:14:43.463Z info: Validation Started
+2024-02-18T05:14:43.470Z info: User found:
+2024-02-18T05:14:43.471Z info: User with name user4@gmail.com not Found
+2024-02-18T05:14:43.472Z info: User found:
+2024-02-18T05:14:43.472Z info: User with name user4 not Found
+2024-02-18T05:14:47.398Z info: Signup Controller Started
+2024-02-18T05:14:47.399Z info: Validation Started
+2024-02-18T05:14:47.402Z info: User found:
+2024-02-18T05:14:47.402Z info: User with name user4@gmail.com not Found
+2024-02-18T05:14:47.404Z info: User found:
+2024-02-18T05:14:47.404Z info: User with name user4 not Found
+2024-02-18T05:14:47.404Z info: Validation Result
+2024-02-18T05:14:47.405Z info: Signup Service Start
+2024-02-18T05:14:47.405Z info: Signup Service Called.......................................
+2024-02-18T05:14:47.406Z info: Signup Service Hashed Password Start.........
+2024-02-18T05:14:47.406Z info: Method : hashPassword() - Create Hash Password
+2024-02-18T05:14:47.495Z info: $2b$10$zEd7WUQei1hlGf0XQksGoe0IzmPaAfGz68dkK4UpmcrIxR/VKk1ce
+2024-02-18T05:14:47.495Z info: Method : hashPassword() - Returned Successfull
+2024-02-18T05:14:47.496Z info: Signup Service Hashed Password End with info : $2b$10$zEd7WUQei1hlGf0XQksGoe0IzmPaAfGz68dkK4UpmcrIxR/VKk1ce
+2024-02-18T05:14:47.496Z info: Save Into Database start..........
+2024-02-18T05:14:47.506Z info: Save Into Database end with info
+2024-02-18T05:14:47.506Z info: {
+  email: 'user4@gmail.com',
+  username: 'user4',
+  password: '$2b$10$zEd7WUQei1hlGf0XQksGoe0IzmPaAfGz68dkK4UpmcrIxR/VKk1ce',
+  role: 'user',
+  _id: new ObjectId('65d192475e4f6c5c2f1f4be2'),
+  createdAt: 2024-02-18T05:14:47.502Z,
+  updatedAt: 2024-02-18T05:14:47.502Z,
+  __v: 0
+}
+2024-02-18T05:14:47.510Z info: Signup Service End
+2024-02-18T05:14:47.510Z info: User Registration Successfully
+2024-02-18T05:15:28.397Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T05:15:28.432Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T05:15:33.344Z info: Signup Controller Started
+2024-02-18T05:15:33.344Z info: Validation Started
+2024-02-18T05:15:33.353Z info: User found:
+2024-02-18T05:15:33.356Z info: User found:
+2024-02-18T05:15:33.356Z info: Validation Result
+2024-02-18T05:15:40.864Z info: Signup Controller Started
+2024-02-18T05:15:40.864Z info: Validation Started
+2024-02-18T05:15:40.868Z info: User found:
+2024-02-18T05:15:40.868Z info: User with name user3@gmail.com not Found
+2024-02-18T05:15:40.871Z info: User found:
+2024-02-18T05:15:40.872Z info: User with name user3 not Found
+2024-02-18T05:15:40.872Z info: Validation Result
+2024-02-18T05:15:40.873Z info: Signup Service Start
+2024-02-18T05:15:40.873Z info: Signup Service Called.......................................
+2024-02-18T05:15:40.873Z info: Signup Service Hashed Password Start.........
+2024-02-18T05:15:40.874Z info: Method : hashPassword() - Create Hash Password
+2024-02-18T05:15:40.935Z info: $2b$10$lLsCi3WosLM/C1vhyAVwP.zUyXRthgYEsKB8G8cdoHv5yArKeD78.
+2024-02-18T05:15:40.935Z info: Method : hashPassword() - Returned Successfull
+2024-02-18T05:15:40.936Z info: Signup Service Hashed Password End with info : $2b$10$lLsCi3WosLM/C1vhyAVwP.zUyXRthgYEsKB8G8cdoHv5yArKeD78.
+2024-02-18T05:15:40.936Z info: Save Into Database start..........
+2024-02-18T05:15:40.945Z info: Save Into Database end with info
+2024-02-18T05:15:40.945Z info: {
+  email: 'user3@gmail.com',
+  username: 'user3',
+  password: '$2b$10$lLsCi3WosLM/C1vhyAVwP.zUyXRthgYEsKB8G8cdoHv5yArKeD78.',
+  role: 'user',
+  _id: new ObjectId('65d1927ccb5a020d3549ca1d'),
+  createdAt: 2024-02-18T05:15:40.941Z,
+  updatedAt: 2024-02-18T05:15:40.941Z,
+  __v: 0
+}
+2024-02-18T05:15:40.949Z info: Signup Service End
+2024-02-18T05:15:40.950Z info: User Registration Successfully
+2024-02-18T05:16:25.052Z error: [41mMethod : validationLog() - Validation Failed in these fields[49m
+2024-02-18T05:16:25.052Z error: [41mField : username Error: username is required[49m
+2024-02-18T05:16:25.052Z error: [41mField : password Error: password is required[49m
+2024-02-18T05:16:42.857Z info: [42mMethod : validationLog() - Validation Successful[49m
+2024-02-18T05:16:42.858Z info: Method : signin() - Check User Info Start
+2024-02-18T05:16:42.861Z info: {
+  _id: new ObjectId('65d1927ccb5a020d3549ca1d'),
+  email: 'user3@gmail.com',
+  username: 'user3',
+  password: '$2b$10$lLsCi3WosLM/C1vhyAVwP.zUyXRthgYEsKB8G8cdoHv5yArKeD78.',
+  role: 'user',
+  createdAt: 2024-02-18T05:15:40.941Z,
+  updatedAt: 2024-02-18T05:15:40.941Z,
+  __v: 0
+}
+2024-02-18T05:16:42.863Z info: Method : signin() - Check User Info Start End
+2024-02-18T05:16:42.863Z info: Method : signin() - Compare Password with the server
+2024-02-18T05:16:42.864Z info: Method: comparePassword() -  Compare Password Funciton is Called
+2024-02-18T05:16:42.864Z info: Data From Compare Password ==========>
+2024-02-18T05:16:42.864Z info: Method : comparePassword() - Compare Password After Funciton Called
+2024-02-18T05:16:42.928Z info: Password Check From Compare Password : 
+2024-02-18T05:16:42.929Z info: true
+2024-02-18T05:16:42.929Z info: Method : signin() - Password is valid
+2024-02-18T05:16:42.929Z info: Method : signin() - JWT Token Creation
+2024-02-18T05:16:42.934Z info: Method : signin() - Token Created
+2024-02-18T05:16:42.935Z info: Signin Successfull
+2024-02-18T05:17:28.502Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T05:17:28.543Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:34:30.349Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:34:30.403Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:37:54.427Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:37:54.470Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:37:58.920Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:37:58.976Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:38:23.298Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:38:23.336Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:38:24.750Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:38:24.795Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:40:25.537Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:40:25.588Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:41:38.921Z info: [42mMethod : validationLog() - Validation Successful[49m
+2024-02-18T06:41:38.921Z info: Method : signin() - Check User Info Start
+2024-02-18T06:41:38.933Z info: {
+  _id: new ObjectId('65d1927ccb5a020d3549ca1d'),
+  email: 'user3@gmail.com',
+  username: 'user3',
+  password: '$2b$10$lLsCi3WosLM/C1vhyAVwP.zUyXRthgYEsKB8G8cdoHv5yArKeD78.',
+  role: 'user',
+  createdAt: 2024-02-18T05:15:40.941Z,
+  updatedAt: 2024-02-18T05:15:40.941Z,
+  __v: 0
+}
+2024-02-18T06:41:38.937Z info: Method : signin() - Check User Info Start End
+2024-02-18T06:41:38.937Z info: Method : signin() - Compare Password with the server
+2024-02-18T06:41:38.938Z info: Method: comparePassword() -  Compare Password Funciton is Called
+2024-02-18T06:41:38.938Z info: Data From Compare Password ==========>
+2024-02-18T06:41:38.939Z info: Method : comparePassword() - Compare Password After Funciton Called
+2024-02-18T06:41:38.995Z info: Password Check From Compare Password : 
+2024-02-18T06:41:59.417Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:41:59.457Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:42:01.580Z info: [42mMethod : validationLog() - Validation Successful[49m
+2024-02-18T06:42:01.581Z info: Method : signin() - Check User Info Start
+2024-02-18T06:42:01.590Z info: {
+  _id: new ObjectId('65d1927ccb5a020d3549ca1d'),
+  email: 'user3@gmail.com',
+  username: 'user3',
+  password: '$2b$10$lLsCi3WosLM/C1vhyAVwP.zUyXRthgYEsKB8G8cdoHv5yArKeD78.',
+  role: 'user',
+  createdAt: 2024-02-18T05:15:40.941Z,
+  updatedAt: 2024-02-18T05:15:40.941Z,
+  __v: 0
+}
+2024-02-18T06:42:01.594Z info: Method : signin() - Check User Info Start End
+2024-02-18T06:42:01.594Z info: Method : signin() - Compare Password with the server
+2024-02-18T06:42:01.595Z info: Method: comparePassword() -  Compare Password Funciton is Called
+2024-02-18T06:42:01.597Z info: Data From Compare Password ==========>
+2024-02-18T06:42:01.598Z info: Method : comparePassword() - Compare Password After Funciton Called
+2024-02-18T06:42:01.653Z info: Password Check From Compare Password : 
+2024-02-18T06:42:01.654Z info: true
+2024-02-18T06:42:01.655Z info: Method : signin() - Password is valid
+2024-02-18T06:42:01.655Z info: Method : signin() - JWT Token Creation
+2024-02-18T06:42:01.659Z info: Method : signin() - Token Created
+2024-02-18T06:42:01.659Z info: Signin Successfull
+2024-02-18T06:42:19.781Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:42:19.818Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:43:19.017Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:43:19.061Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:43:24.796Z info: [42mMethod : validationLog() - Validation Successful[49m
+2024-02-18T06:43:24.796Z info: Method : signin() - Check User Info Start
+2024-02-18T06:43:24.807Z info: {
+  _id: new ObjectId('65d1927ccb5a020d3549ca1d'),
+  email: 'user3@gmail.com',
+  username: 'user3',
+  password: '$2b$10$lLsCi3WosLM/C1vhyAVwP.zUyXRthgYEsKB8G8cdoHv5yArKeD78.',
+  role: 'user',
+  createdAt: 2024-02-18T05:15:40.941Z,
+  updatedAt: 2024-02-18T05:15:40.941Z,
+  __v: 0
+}
+2024-02-18T06:43:24.811Z info: Method : signin() - Check User Info Start End
+2024-02-18T06:43:24.812Z info: Method : signin() - Compare Password with the server
+2024-02-18T06:43:24.812Z info: Method: comparePassword() -  Compare Password Funciton is Called
+2024-02-18T06:43:24.813Z info: Data From Compare Password ==========>
+2024-02-18T06:43:24.813Z info: Method : comparePassword() - Compare Password After Funciton Called
+2024-02-18T06:43:24.875Z info: Password Check From Compare Password : 
+2024-02-18T06:43:24.876Z info: true
+2024-02-18T06:43:24.876Z info: Method : signin() - Password is valid
+2024-02-18T06:43:24.877Z info: Method : signin() - JWT Token Creation
+2024-02-18T06:43:24.879Z info: Method : signin() - Token Created
+2024-02-18T06:43:24.879Z info: Signin Successfull
+2024-02-18T06:43:36.233Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:43:36.270Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:43:40.920Z info: [42mMethod : validationLog() - Validation Successful[49m
+2024-02-18T06:43:40.921Z info: Method : signin() - Check User Info Start
+2024-02-18T06:43:40.929Z info: {
+  _id: new ObjectId('65d1927ccb5a020d3549ca1d'),
+  email: 'user3@gmail.com',
+  username: 'user3',
+  password: '$2b$10$lLsCi3WosLM/C1vhyAVwP.zUyXRthgYEsKB8G8cdoHv5yArKeD78.',
+  role: 'user',
+  createdAt: 2024-02-18T05:15:40.941Z,
+  updatedAt: 2024-02-18T05:15:40.941Z,
+  __v: 0
+}
+2024-02-18T06:43:40.933Z info: Method : signin() - Check User Info Start End
+2024-02-18T06:43:40.934Z info: Method : signin() - Compare Password with the server
+2024-02-18T06:43:40.935Z info: Method: comparePassword() -  Compare Password Funciton is Called
+2024-02-18T06:43:40.938Z info: Data From Compare Password ==========>
+2024-02-18T06:43:40.940Z info: Method : comparePassword() - Compare Password After Funciton Called
+2024-02-18T06:43:40.998Z info: Password Check From Compare Password : 
+2024-02-18T06:43:40.999Z info: true
+2024-02-18T06:43:40.999Z info: Method : signin() - Password is valid
+2024-02-18T06:43:40.999Z info: Method : signin() - JWT Token Creation
+2024-02-18T06:43:41.002Z info: Method : signin() - Token Created
+2024-02-18T06:43:41.002Z info: Signin Successfull
+2024-02-18T06:43:41.032Z error: Internal Server Error
+2024-02-18T06:43:41.032Z error: undefined
+2024-02-18T06:43:56.479Z info: [42mMethod : validationLog() - Validation Successful[49m
+2024-02-18T06:43:56.480Z info: Method : signin() - Check User Info Start
+2024-02-18T06:43:56.482Z info: {
+  _id: new ObjectId('65d1927ccb5a020d3549ca1d'),
+  email: 'user3@gmail.com',
+  username: 'user3',
+  password: '$2b$10$lLsCi3WosLM/C1vhyAVwP.zUyXRthgYEsKB8G8cdoHv5yArKeD78.',
+  role: 'user',
+  createdAt: 2024-02-18T05:15:40.941Z,
+  updatedAt: 2024-02-18T05:15:40.941Z,
+  __v: 0
+}
+2024-02-18T06:43:56.484Z info: Method : signin() - Check User Info Start End
+2024-02-18T06:43:56.484Z info: Method : signin() - Compare Password with the server
+2024-02-18T06:43:56.484Z info: Method: comparePassword() -  Compare Password Funciton is Called
+2024-02-18T06:43:56.485Z info: Data From Compare Password ==========>
+2024-02-18T06:43:56.485Z info: Method : comparePassword() - Compare Password After Funciton Called
+2024-02-18T06:43:56.541Z info: Password Check From Compare Password : 
+2024-02-18T06:43:56.541Z info: true
+2024-02-18T06:43:56.542Z info: Method : signin() - Password is valid
+2024-02-18T06:43:56.542Z info: Method : signin() - JWT Token Creation
+2024-02-18T06:43:56.543Z info: Method : signin() - Token Created
+2024-02-18T06:43:56.543Z info: Signin Successfull
+2024-02-18T06:43:56.565Z error: Internal Server Error
+2024-02-18T06:43:56.566Z error: undefined
+2024-02-18T06:44:40.547Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:44:40.593Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:44:42.610Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:44:42.645Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:44:52.641Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:44:52.677Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:44:56.327Z info: [42mMethod : validationLog() - Validation Successful[49m
+2024-02-18T06:44:56.328Z info: Method : signin() - Check User Info Start
+2024-02-18T06:44:56.336Z info: {
+  _id: new ObjectId('65d1927ccb5a020d3549ca1d'),
+  email: 'user3@gmail.com',
+  username: 'user3',
+  password: '$2b$10$lLsCi3WosLM/C1vhyAVwP.zUyXRthgYEsKB8G8cdoHv5yArKeD78.',
+  role: 'user',
+  createdAt: 2024-02-18T05:15:40.941Z,
+  updatedAt: 2024-02-18T05:15:40.941Z,
+  __v: 0
+}
+2024-02-18T06:44:56.339Z info: Method : signin() - Check User Info Start End
+2024-02-18T06:44:56.339Z info: Method : signin() - Compare Password with the server
+2024-02-18T06:44:56.340Z info: Method: comparePassword() -  Compare Password Funciton is Called
+2024-02-18T06:44:56.340Z info: Data From Compare Password ==========>
+2024-02-18T06:44:56.340Z info: Method : comparePassword() - Compare Password After Funciton Called
+2024-02-18T06:44:56.400Z info: Password Check From Compare Password : 
+2024-02-18T06:44:56.400Z info: true
+2024-02-18T06:44:56.400Z info: Method : signin() - Password is valid
+2024-02-18T06:44:56.400Z info: Method : signin() - JWT Token Creation
+2024-02-18T06:44:56.405Z info: Method : signin() - Token Created
+2024-02-18T06:44:56.405Z info: Signin Successfull
+2024-02-18T06:44:56.431Z error: Internal Server Error
+2024-02-18T06:44:56.431Z error: undefined
+2024-02-18T06:45:20.342Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:45:20.378Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:46:06.275Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:46:06.309Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-18T06:46:09.641Z info: [42mMethod : validationLog() - Validation Successful[49m
+2024-02-18T06:46:09.642Z info: Method : signin() - Check User Info Start
+2024-02-18T06:46:09.648Z info: {
+  _id: new ObjectId('65d1927ccb5a020d3549ca1d'),
+  email: 'user3@gmail.com',
+  username: 'user3',
+  password: '$2b$10$lLsCi3WosLM/C1vhyAVwP.zUyXRthgYEsKB8G8cdoHv5yArKeD78.',
+  role: 'user',
+  createdAt: 2024-02-18T05:15:40.941Z,
+  updatedAt: 2024-02-18T05:15:40.941Z,
+  __v: 0
+}
+2024-02-18T06:46:09.652Z info: Method : signin() - Check User Info Start End
+2024-02-18T06:46:09.652Z info: Method : signin() - Compare Password with the server
+2024-02-18T06:46:09.653Z info: Method: comparePassword() -  Compare Password Funciton is Called
+2024-02-18T06:46:09.654Z info: Data From Compare Password ==========>
+2024-02-18T06:46:09.655Z info: Method : comparePassword() - Compare Password After Funciton Called
+2024-02-18T06:46:09.713Z info: Password Check From Compare Password : 
+2024-02-18T06:46:09.713Z info: true
+2024-02-18T06:46:09.714Z info: Method : signin() - Password is valid
+2024-02-18T06:46:09.714Z info: Method : signin() - JWT Token Creation
+2024-02-18T06:46:09.717Z info: Method : signin() - Token Created
+2024-02-18T06:46:09.717Z info: Signin Successfull
+2024-02-18T06:46:30.633Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-18T06:46:30.670Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m

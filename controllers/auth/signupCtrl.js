@@ -65,7 +65,7 @@ export const signupCtrl = async (req, res) => {
     return res.status(201).send({
       success: user.success,
       message: user.message,
-      data: user.data,
+      data: "",
     });
   } catch (error) {
     logger.error("Errror in Uer Registration");

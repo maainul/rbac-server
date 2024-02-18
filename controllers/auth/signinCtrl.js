@@ -30,6 +30,7 @@ export const signinCtrl = async (req, res) => {
             validationRulesLogin,
             UserModel
         );
+
         // Validation log
         validationLog(validationResult);
         if (!validationResult.isValid) {
@@ -53,13 +54,15 @@ export const signinCtrl = async (req, res) => {
             });
         }
 
-        logger.info("Method : signin() - User is Valid");
+        logger.info("Method : signin() - Compare Password with the server");
         const validPassword = await comparePassword(password, validUser.password);
         logger.info("Password Check From Compare Password : ");
         logger.info(validPassword);
         logger.info("Method : signin() - Password is valid");
 
         if (!validPassword) {
+            logger.info("Wrong Credentials.Password don't Match");
+
             return res.status(201).send({
                 success: true,
                 message: "Wrong Credentials",
@@ -80,19 +83,15 @@ export const signinCtrl = async (req, res) => {
             });
             logger.info("Method : signin() - Token Created");
             logger.info("Signin Successfull");
-            return res.status(200).send({
-                success: true,
-                message: "Signin Successfull",
-                user: {
-                    _id: validUser._id,
-                    username: validUser.username,
-                    email: validUser.email,
-                    mobileNumber: validUser.mobileNumber,
-                    role: validUser.role,
-                },
-                token,
-            });
-        }
+
+        // send the token in the HTTP-only 
+        return res.cookie("token",token,{
+            httpOnly:true,
+        }).send({
+            success:true,
+            message:"Signin Successfull"
+        })
+    }
     } catch (error) {
         logger.error("Internal Server Error");
         logger.error(error);

@@ -75,7 +75,7 @@ export const signupCtrl = async (req, res) => {
     logger.info("Method : signin() - JWT Token Creation");
     const jwt = process.env.JWT_SECRET;
     const token = JWT.sign({ _id: savedUser._id }, jwt, { expiresIn: "1d" });
-    console.lo("User Successfully Registered")
+    console.log("User Successfully Registered")
     // send the token in a HTTP-only cookie
     return res.cookie("token", token, {
       httpOnly: true,

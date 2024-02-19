@@ -34,21 +34,22 @@ export const signupCtrl = async (req, res) => {
   try {
     // Validation
     logger.info("Validation Started");
-    const { username,email, password } = req.body;
+    const { username, email, password, confirmPassword } = req.body;
     const validationResult = await MValidator(
       req.body,
       validationRules,
       UserModel
     );
 
-    if(req.body.password !== req.body.confirmPassword){
+    if (password !== confirmPassword) {
+      validationResult.errors.push({ field: "password", error: "Password don't match" })
       return res.status(201).send({
         success: true,
         message: "Validation Failed",
-        errors: "Password don't match",
+        errors: validationResult.errors,
       });
     }
-    
+
     // Validation log
     logger.info("Validation Result");
     if (!validationResult.isValid) {
@@ -68,22 +69,22 @@ export const signupCtrl = async (req, res) => {
       email,
       password: hashedPassword,
     })
-    const savedUser  = await newUser.save()
+    const savedUser = await newUser.save()
 
-  // Sign the token
-  logger.info("Method : signin() - JWT Token Creation");
-  const jwt = process.env.JWT_SECRET;
-  const token = JWT.sign({ _id: savedUser ._id }, jwt, {expiresIn: "1d"});
-          
- // send the token in a HTTP-only cookie
-  return res.cookie("token",token,{
-    httpOnly:true,
-    secure:true,
-    sameSite:"none"
-  }).send({
-    success:true,
-    message:"User Successfully Registered"
-  })
+    // Sign the token
+    logger.info("Method : signin() - JWT Token Creation");
+    const jwt = process.env.JWT_SECRET;
+    const token = JWT.sign({ _id: savedUser._id }, jwt, { expiresIn: "1d" });
+    console.lo("User Successfully Registered")
+    // send the token in a HTTP-only cookie
+    return res.cookie("token", token, {
+      httpOnly: true,
+      secure: true,
+      sameSite: "none"
+    }).send({
+      success: true,
+      message: "User Successfully Registered"
+    })
 
   } catch (error) {
     logger.error("Errror in Uer Registration");

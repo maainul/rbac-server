@@ -44,10 +44,12 @@ const spec = swaggerJSDoc(options)
 const app = express()
 
 //middelwares
-app.use(cors())
 app.use(morgan('dev'))
 app.use(express.json())
 app.use(cookieParser())
+app.use(cors({
+    origin: ["http://localhost:3000", "https://rbac-frontend.netlify.app"],
+}))
 
 // Router
 app.use('/api/v1', routes)

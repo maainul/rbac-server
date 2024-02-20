@@ -107,3 +107,22 @@
 2024-02-20T14:03:52.833Z info: $2b$10$5LE.BUl1W8aQ5udsP/RWmeBBxIxObUDxeXG8hndE30kyLmwmSVWZ2
 2024-02-20T14:03:52.834Z info: Method : hashPassword() - Returned Successfull
 2024-02-20T14:03:52.844Z error: Errror in Uer Registration
+2024-02-20T14:28:01.079Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-20T14:28:01.219Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-20T14:30:39.034Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-20T14:30:39.125Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-20T14:35:07.004Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-20T14:35:07.106Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-20T14:47:53.583Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-20T14:47:53.706Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-20T15:40:35.219Z info: Signup Controller Started
+2024-02-20T15:40:35.221Z info: Validation Started
+2024-02-20T15:40:35.236Z info: User found:
+2024-02-20T15:40:35.237Z info: User with name Officia neque ut lab not Found
+2024-02-20T15:40:35.240Z info: User found:
+2024-02-20T15:40:35.241Z info: User with name sitlon not Found
+2024-02-20T15:40:35.241Z info: Validation Result
+2024-02-20T15:40:35.242Z info: Method : hashPassword() - Create Hash Password
+2024-02-20T15:40:35.339Z info: $2b$10$ygooA9FMYgh8rm8TN.j1/.umJJzDpBESjxG7v3i7xX/Ulc6gY4dRe
+2024-02-20T15:40:35.340Z info: Method : hashPassword() - Returned Successfull
+2024-02-20T15:40:35.358Z info: Method : signin() - JWT Token Creation

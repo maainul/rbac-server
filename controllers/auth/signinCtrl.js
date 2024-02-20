@@ -61,33 +61,32 @@ export const signinCtrl = async (req, res) => {
         logger.info("Method : signin() - Password is valid");
         if (!validPassword) {
             logger.info("Wrong Credentials.Password don't Match");
-
             return res.status(201).send({
                 success: true,
                 message: "Wrong Credentials",
                 errors: [{ field: "password", error: "password doesn't match" }],
             });
         }
-        
+
         // Sign in with token
         logger.info("Method : signin() - JWT Token Creation");
         const jwt = process.env.JWT_SECRET;
         const token = JWT.sign({ _id: validUser._id }, jwt, {
-                expiresIn: "1d",
+            expiresIn: "1d",
         });
         logger.info("Method : signin() - Token Created");
         logger.info("Signin Successfull");
 
         // send the token in the HTTP-only 
-        return res.cookie("token",token,{
-            httpOnly:true,
-            secure:true,
-            sameSite:"none"
+        return res.cookie("token", token, {
+            httpOnly: true,
+            secure: true,
+            sameSite: "none"
         }).send({
-            success:true,
-            message:"Signin Successfull"
+            success: true,
+            message: "Signin Successfull"
         })
-    
+
     } catch (error) {
         logger.error("Internal Server Error");
         logger.error(error);

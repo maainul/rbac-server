@@ -30,6 +30,9 @@ const options = {
             },
             {
                 url: "http://localhost:8081"
+            },
+            {
+                url: "https://rbac-4g20.onrender.com"
             }
         ]
     },
@@ -49,6 +52,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
     origin: ["http://localhost:3000", "https://rbac-frontend.netlify.app"],
+    credentials: true,
 }))
 
 // Router

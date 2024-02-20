@@ -14,6 +14,8 @@ export const authMiddleware = async (req, res, next) => {
             });
         }
         const verified = JWT.verify(token, process.env.JWT_SECRET);
+        // this verified contains user id because we create cookie based on this id id sidn up controller
+        //  const token = JWT.sign({ _id: savedUser._id }, jwt, { expiresIn: "1d" });
         req.user = verified.user;
         next();
     } catch (error) {

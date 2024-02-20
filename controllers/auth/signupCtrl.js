@@ -10,21 +10,21 @@ const validationRules = {
     type: "string",
     required: true,
     max: 50,
-    min: 3,
+    min: 10,
     exists: [true, "Email already exists"],
   },
   username: {
     type: "string",
     required: true,
-    max: 50,
+    max: 16,
     min: 3,
     exists: [true, "Username already exists"],
   },
   password: {
     type: "string",
     required: true,
-    max: 50,
-    min: 3,
+    max: 20,
+    min: 4,
   },
 };
 
@@ -88,6 +88,7 @@ export const signupCtrl = async (req, res) => {
 
   } catch (error) {
     logger.error("Errror in Uer Registration");
+    console.log(error)
     const status = error.status || 500;
     return res.status(status).send({
       success: false,

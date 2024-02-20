@@ -1,0 +1,109 @@
+2024-02-20T13:36:09.467Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-20T13:36:09.596Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-20T13:38:34.193Z info: Signup Controller Started
+2024-02-20T13:38:34.197Z info: Validation Started
+2024-02-20T13:38:34.247Z info: User found:
+2024-02-20T13:38:34.250Z info: User with name Nisi libero ut Nam q not Found
+2024-02-20T13:38:34.253Z info: User found:
+2024-02-20T13:38:34.256Z info: User with name Soluta doloribus nes not Found
+2024-02-20T13:38:34.257Z info: Validation Result
+2024-02-20T13:38:51.586Z info: Signup Controller Started
+2024-02-20T13:38:51.618Z info: Validation Started
+2024-02-20T13:38:51.619Z info: Validation Result
+2024-02-20T13:38:55.882Z info: Signup Controller Started
+2024-02-20T13:38:55.884Z info: Validation Started
+2024-02-20T13:38:55.885Z info: Validation Result
+2024-02-20T13:42:37.548Z info: Signup Controller Started
+2024-02-20T13:42:37.549Z info: Validation Started
+2024-02-20T13:42:37.550Z info: Validation Result
+2024-02-20T13:46:11.049Z info: Signup Controller Started
+2024-02-20T13:46:11.141Z info: Validation Started
+2024-02-20T13:46:11.176Z info: Validation Result
+2024-02-20T13:47:06.113Z info: Signup Controller Started
+2024-02-20T13:47:06.115Z info: Validation Started
+2024-02-20T13:47:06.121Z info: Validation Result
+2024-02-20T13:47:09.064Z info: Signup Controller Started
+2024-02-20T13:47:09.065Z info: Validation Started
+2024-02-20T13:47:09.066Z info: Validation Result
+2024-02-20T13:47:20.825Z info: Signup Controller Started
+2024-02-20T13:47:20.826Z info: Validation Started
+2024-02-20T13:47:20.831Z info: Validation Result
+2024-02-20T13:47:34.537Z info: Signup Controller Started
+2024-02-20T13:47:34.538Z info: Validation Started
+2024-02-20T13:47:34.544Z info: Validation Result
+2024-02-20T13:55:57.890Z info: Signup Controller Started
+2024-02-20T13:55:57.891Z info: Validation Started
+2024-02-20T13:55:57.903Z info: User found:
+2024-02-20T13:55:57.906Z info: User found:
+2024-02-20T13:55:57.907Z info: User with name eeerr not Found
+2024-02-20T13:55:57.907Z info: Validation Result
+2024-02-20T13:56:03.053Z info: Signup Controller Started
+2024-02-20T13:56:03.055Z info: Validation Started
+2024-02-20T13:56:03.061Z info: User found:
+2024-02-20T13:56:03.064Z info: User found:
+2024-02-20T13:56:03.065Z info: User with name eeerr not Found
+2024-02-20T13:56:03.065Z info: Validation Result
+2024-02-20T13:56:10.436Z info: Signup Controller Started
+2024-02-20T13:56:10.437Z info: Validation Started
+2024-02-20T13:56:10.440Z info: User found:
+2024-02-20T13:56:10.440Z info: User with name user11@gmail.com not Found
+2024-02-20T13:56:10.444Z info: User found:
+2024-02-20T13:56:10.444Z info: User with name eeerr not Found
+2024-02-20T13:56:10.445Z info: Validation Result
+2024-02-20T13:56:10.445Z info: Method : hashPassword() - Create Hash Password
+2024-02-20T13:56:10.521Z info: $2b$10$gGHM/u0gmVy2rxFCT/QAUu0oYRRD3iYwLbBEIrJYs5T43zZx6Z6a2
+2024-02-20T13:56:10.522Z info: Method : hashPassword() - Returned Successfull
+2024-02-20T13:56:10.531Z error: Errror in Uer Registration
+2024-02-20T13:58:30.585Z info: Signup Controller Started
+2024-02-20T13:58:30.585Z info: Validation Started
+2024-02-20T13:58:30.586Z info: Validation Result
+2024-02-20T13:59:23.378Z info: Signup Controller Started
+2024-02-20T13:59:23.378Z info: Validation Started
+2024-02-20T13:59:23.382Z info: User found:
+2024-02-20T13:59:23.383Z info: User with name user11@gmail.com not Found
+2024-02-20T13:59:23.387Z info: User found:
+2024-02-20T13:59:23.387Z info: User with name eeerr not Found
+2024-02-20T13:59:23.388Z info: Validation Result
+2024-02-20T13:59:23.388Z info: Method : hashPassword() - Create Hash Password
+2024-02-20T13:59:23.483Z info: $2b$10$Bysi5r8ZYKKrW3RBLK6QdeYHaqfkv/SVZzYXd//yRksQnYnNWSzAy
+2024-02-20T13:59:23.485Z info: Method : hashPassword() - Returned Successfull
+2024-02-20T13:59:23.487Z error: Errror in Uer Registration
+2024-02-20T14:00:43.588Z info: Signup Controller Started
+2024-02-20T14:00:43.588Z info: Validation Started
+2024-02-20T14:00:43.591Z info: User found:
+2024-02-20T14:00:43.591Z info: User with name user11@gmail.com not Found
+2024-02-20T14:00:43.593Z info: User found:
+2024-02-20T14:00:43.594Z info: User with name eeerr not Found
+2024-02-20T14:00:43.594Z info: Validation Result
+2024-02-20T14:00:43.595Z info: Method : hashPassword() - Create Hash Password
+2024-02-20T14:00:43.674Z info: $2b$10$R/VNAUfKmbMF6RoQuvf5OujgXoMDGGWsOjXn6XE0L32cbP/DwoQfq
+2024-02-20T14:00:43.674Z info: Method : hashPassword() - Returned Successfull
+2024-02-20T14:00:43.676Z error: Errror in Uer Registration
+2024-02-20T14:02:11.845Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-20T14:02:11.931Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-20T14:02:13.421Z info: Signup Controller Started
+2024-02-20T14:02:13.422Z info: Validation Started
+2024-02-20T14:02:13.432Z info: User found:
+2024-02-20T14:02:13.433Z info: User with name user11@gmail.com not Found
+2024-02-20T14:02:13.435Z info: User found:
+2024-02-20T14:02:13.436Z info: User with name eeerr not Found
+2024-02-20T14:02:13.436Z info: Validation Result
+2024-02-20T14:02:13.437Z info: Method : hashPassword() - Create Hash Password
+2024-02-20T14:02:13.525Z info: $2b$10$rjYQxwx2cS9cGYl0Ri9e/u/MBshRR2MZ.eCPWeYEVUUTIGd7RmEwG
+2024-02-20T14:02:13.526Z info: Method : hashPassword() - Returned Successfull
+2024-02-20T14:02:13.537Z error: Errror in Uer Registration
+2024-02-20T14:03:19.643Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-20T14:03:19.712Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-20T14:03:39.251Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-02-20T14:03:39.345Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-02-20T14:03:52.704Z info: Signup Controller Started
+2024-02-20T14:03:52.705Z info: Validation Started
+2024-02-20T14:03:52.722Z info: User found:
+2024-02-20T14:03:52.724Z info: User with name user11@gmail.com not Found
+2024-02-20T14:03:52.727Z info: User found:
+2024-02-20T14:03:52.728Z info: User with name eeerr not Found
+2024-02-20T14:03:52.729Z info: Validation Result
+2024-02-20T14:03:52.730Z info: Method : hashPassword() - Create Hash Password
+2024-02-20T14:03:52.833Z info: $2b$10$5LE.BUl1W8aQ5udsP/RWmeBBxIxObUDxeXG8hndE30kyLmwmSVWZ2
+2024-02-20T14:03:52.834Z info: Method : hashPassword() - Returned Successfull
+2024-02-20T14:03:52.844Z error: Errror in Uer Registration

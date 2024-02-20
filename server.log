@@ -126,3 +126,37 @@
 2024-02-20T15:40:35.339Z info: $2b$10$ygooA9FMYgh8rm8TN.j1/.umJJzDpBESjxG7v3i7xX/Ulc6gY4dRe
 2024-02-20T15:40:35.340Z info: Method : hashPassword() - Returned Successfull
 2024-02-20T15:40:35.358Z info: Method : signin() - JWT Token Creation
+2024-02-20T15:54:18.340Z info: Signup Controller Started
+2024-02-20T15:54:18.341Z info: Validation Started
+2024-02-20T15:54:18.346Z info: User found:
+2024-02-20T15:54:18.347Z info: User with name kusum@gmail.com not Found
+2024-02-20T15:54:18.351Z info: User found:
+2024-02-20T15:54:18.352Z info: User with name kusum not Found
+2024-02-20T15:54:18.352Z info: Validation Result
+2024-02-20T15:54:18.352Z info: Method : hashPassword() - Create Hash Password
+2024-02-20T15:54:18.455Z info: $2b$10$64uF8X8YbzL4KqNH/9.26e4xt/eP6LFnS7OldDSL9uKIhDQewAMau
+2024-02-20T15:54:18.456Z info: Method : hashPassword() - Returned Successfull
+2024-02-20T15:54:18.460Z info: Method : signin() - JWT Token Creation
+2024-02-20T15:54:29.142Z info: [42mMethod : validationLog() - Validation Successful[49m
+2024-02-20T15:54:29.142Z info: Method : signin() - Check User Info Start
+2024-02-20T15:54:29.150Z info: {
+  _id: new ObjectId('65d4cb2a97484ff3e795c47d'),
+  email: 'kusum@gmail.com',
+  username: 'kusum',
+  password: '$2b$10$64uF8X8YbzL4KqNH/9.26e4xt/eP6LFnS7OldDSL9uKIhDQewAMau',
+  role: 'user',
+  createdAt: 2024-02-20T15:54:18.457Z,
+  updatedAt: 2024-02-20T15:54:18.457Z,
+  __v: 0
+}
+2024-02-20T15:54:29.158Z info: Method : signin() - Check User Info Start End
+2024-02-20T15:54:29.158Z info: Method : signin() - Compare Password with the server
+2024-02-20T15:54:29.159Z info: Method: comparePassword() -  Compare Password Funciton is Called
+2024-02-20T15:54:29.161Z info: Data From Compare Password ==========>
+2024-02-20T15:54:29.162Z info: Method : comparePassword() - Compare Password After Funciton Called
+2024-02-20T15:54:29.242Z info: Password Check From Compare Password : 
+2024-02-20T15:54:29.243Z info: true
+2024-02-20T15:54:29.243Z info: Method : signin() - Password is valid
+2024-02-20T15:54:29.243Z info: Method : signin() - JWT Token Creation
+2024-02-20T15:54:29.245Z info: Method : signin() - Token Created
+2024-02-20T15:54:29.245Z info: Signin Successfull

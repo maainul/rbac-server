@@ -1,5 +1,3 @@
-const MValidator = require('../validator/MValidator')
-const validationLog = require('../utils/validationLog');
 const UserModel = require('../models/User');
 
 const listUser = async (req, res) => {

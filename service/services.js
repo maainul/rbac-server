@@ -1,10 +1,6 @@
 
-import { expensesService } from './expense/expenseServ.js';
-import { analyticsService } from './analytics/analyticsService.js';
-import { expenseTypeService } from './expenseType/expenseTypeService.js';
+import { applicationRouteService } from './applicationRoute/applicationRoute.js';
 
 export const serv = {
-    expensesService,
-    analyticsService,
-    expenseTypeService
+    applicationRouteService,
 }

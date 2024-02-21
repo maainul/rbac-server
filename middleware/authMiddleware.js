@@ -29,6 +29,23 @@ export const authMiddleware = async (req, res, next) => {
 };
 
 
+// Check User Logged In or Not
+export const loggedIn = async (req, res) => {
+    try {
+        const token = req.cookies.token
+        if (!token) return res.json(false);
+        const verify = JWT.verify(token, process.env.JWT_SECRET);
+        console.log(`Logged in User id = ${verify._id}`.bgMagenta)
+        res.send(true)
+    } catch (error) {
+        logger.info(`You don't Have Verified Token.`);
+        return res.json(false);
+    }
+};
+
+
+
+
 // Admin access
 export const adminMiddleware = async (req, res, next) => {
     try {

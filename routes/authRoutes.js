@@ -1,7 +1,7 @@
 
 import { Router } from 'express'
 import { controller } from './../controllers/controller.js';
-import { authMiddleware } from './../middleware/authMiddleware.js';
+import { authMiddleware, loggedIn } from './../middleware/authMiddleware.js';
 
 
 const router = Router()
@@ -11,6 +11,7 @@ const router = Router()
 router.post('/signin', controller.authCtrl.signinCtrl)
 router.post('/signup', controller.authCtrl.signupCtrl)
 router.get('/signout', controller.authCtrl.signoutCtrl)
+router.get("/logged-in", loggedIn)
 router.get('/get-current-user', authMiddleware, controller.authCtrl.currentUserCtrl)
 
 

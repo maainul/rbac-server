@@ -84,7 +84,7 @@ export const signinCtrl = async (req, res) => {
             sameSite: "none"
         }).send({
             success: true,
-            message: "Signin Successfull"
+            message: "Signin Successfull",
         })
 
     } catch (error) {

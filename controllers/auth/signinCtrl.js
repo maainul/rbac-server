@@ -84,7 +84,14 @@ export const signinCtrl = async (req, res) => {
             sameSite: "none"
         }).send({
             success: true,
-            message: "Signin Successfull"
+            message: "Signin Successfull",
+            user: {
+                _id: validUser._id,
+                username: validUser.username,
+                email: validUser.email,
+                mobileNumber: validUser.mobileNumber,
+                role: validUser.role,
+            }
         })
 
     } catch (error) {

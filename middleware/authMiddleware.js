@@ -1,6 +1,7 @@
 import JWT from "jsonwebtoken";
 import userModel from "../models/User.js";
 import { logger } from '../middleware/logMiddleware.js'
+import UserModel from "../models/User.js";
 
 // Protected Routes : Token Based
 export const authMiddleware = async (req, res, next) => {
@@ -34,12 +35,15 @@ export const loggedIn = async (req, res) => {
     try {
         const token = req.cookies.token
         if (!token) return res.json(false);
+        // Verfiy User and Get User ID
         const verify = JWT.verify(token, process.env.JWT_SECRET);
         console.log(`Logged in User id = ${verify._id}`.bgMagenta)
-        res.send(true)
+        // Fetch User Info After Verify User
+        const user = await UserModel.findById(verify._id)
+        res.json({ loggedIn: true, user: user });
     } catch (error) {
-        logger.info(`You don't Have Verified Token.`);
-        return res.json(false);
+       logger.info(`You don't Have Verified Token.`);
+        return res.json({ loggedIn: false });
     }
 };
 

@@ -1405,3 +1405,13 @@
 >>>>>>> fe2015a8e3d5205223f4e16884e712aa6690f926
 2024-03-01T11:08:40.975Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
 2024-03-01T11:08:41.124Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-03-02T07:08:51.744Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-03-02T07:08:51.820Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-03-02T07:10:00.219Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-03-02T07:10:00.296Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-03-02T07:10:50.061Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-03-02T07:10:50.150Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-03-02T07:11:44.376Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-03-02T07:11:44.450Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-03-02T07:14:00.162Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
+2024-03-02T07:14:00.273Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m

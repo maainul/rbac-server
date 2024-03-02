@@ -18,32 +18,18 @@ export const googleOAuthCtrl = async (req, res) => {
         const googleUser = await getGoogleUser({ id_token, access_token })
 
         // upsert the user
-        const user = await UserModel.findByIdAndUpdate({
-            email: googleUser.email,
-
-        }, {
-            email: googleUser.email,
-            name: googleUser.name,
-            picture: googleUser.picture
-        }, {
-            upsert: true,
-            new: true
-        })
-
-        console.log("#################")
-        console.log(user)
-        console.log("#################")
+        const user = await findAndUpdateUser(googleUser)
 
         // create a session 
         // const session = createSession()
         // console.log(session)
 
         // create access & refesh tokens
-        const accessToken = access_token
+        // const accessToken = access_token
         // const refreshToken = access_token
 
         // set cookies
-        res.cookie("accessToken", accessToken, accessTokenCookieOptions)
+        res.cookie("accessToken", id_token, accessTokenCookieOptions)
         // res.cookie("refreshToken", refreshToken, refreshTokenCookieOptions)
 
         // redirect back to client
@@ -54,9 +40,6 @@ export const googleOAuthCtrl = async (req, res) => {
         return res.redirect(`${process.env.REACT_APP_API_URL}/oauth/error`)
     }
 };
-
-
-
 
 
 // interface GoogleTokenResult{
@@ -117,4 +100,25 @@ export async function getGoogleUser({ id_token, access_token }) {
         console.log(error, "Error Fetch in Google User")
         throw new Error(error.message)
     }
+}
+
+async function findAndUpdateUser(googleUser) {
+    const filter = { email: googleUser.email };
+    const update = {
+        firstname: googleUser.given_name,
+        lastname: googleUser.family_name,
+        email: googleUser.email,
+        username: googleUser.email, // You can set username as email temporarily
+        picture: googleUser.picture
+    };
+
+    const options = {
+        upsert: true,
+        new: true // Return the modified document rather than the original
+    };
+
+    // Find One and Update Data in the Database
+    const user = await UserModel.findOneAndUpdate(filter, update, options);
+
+    return user;
 }

@@ -19,7 +19,27 @@ export const hashPassword = async (pass) => {
 export const comparePassword = async (pass, hp) => {
     logger.info('Method: comparePassword() -  Compare Password Funciton is Called')
     const cp = bcrypt.compare(pass, hp)
-    logger.info("Data From Compare Password ==========>",cp)
+    logger.info("Data From Compare Password ==========>", cp)
     logger.info('Method : comparePassword() - Compare Password After Funciton Called')
     return cp
+}
+
+
+export const createSession = async () => {
+    const session = "Mainul"
+    return session
+}
+
+
+export const accessTokenCookieOptions = {
+    httpOnly: true,
+    maxAge: 900000,
+    secure: true,
+    sameSite: "none"
+}
+
+
+export const refreshTokenCookieOptions = {
+    ...accessTokenCookieOptions,
+    maxAge: 3.154e10, // 1 Year
 }

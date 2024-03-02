@@ -3,12 +3,12 @@ import { logger } from "../../middleware/logMiddleware.js";
 export const signoutCtrl = async (req, res) => {
     try {
         console.log("Signout Server : Signout Ctrl Called")
-        return res.cookie("token","",{
-            httpOnly:true,
+        return res.cookie("accessToken", "", {
+            httpOnly: true,
             expires: new Date(0)
         }).send({
-            success:true,
-            message:"Logout Successfully"
+            success: true,
+            message: "Logout Successfully"
         })
 
     } catch (error) {

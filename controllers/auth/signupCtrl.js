@@ -1,6 +1,6 @@
 import { logger } from "../../middleware/logMiddleware.js";
 import UserModel from "../../models/User.js";
-import { hashPassword } from "../../utils/authHelper.js";
+import { accessTokenCookieOptions, hashPassword } from "../../utils/authHelper.js";
 import MValidator from "../../validator/MValidator.js";
 import JWT from 'jsonwebtoken';
 
@@ -26,21 +26,26 @@ const validationRules = {
     max: 20,
     min: 4,
   },
+  picture: {
+    type: "string",
+  },
 };
+
+
 
 
 export const signupCtrl = async (req, res) => {
   logger.info("Signup Controller Started");
   try {
-    // Validation
+    // Validation For Empty and Existing Email
     logger.info("Validation Started");
-    const { username, email, password, confirmPassword } = req.body;
+    const { picture, username, email, password, confirmPassword } = req.body;
     const validationResult = await MValidator(
       req.body,
       validationRules,
       UserModel
     );
-
+    // Compare Password and Confirm Password
     if (password !== confirmPassword) {
       validationResult.errors.push({ field: "password", error: "Password don't match" })
       return res.status(201).send({
@@ -65,23 +70,28 @@ export const signupCtrl = async (req, res) => {
 
     // Save Data to DB
     const newUser = new UserModel({
+      picture,
       username,
       email,
       password: hashedPassword,
     })
     const savedUser = await newUser.save()
 
-    // Sign the token
-    logger.info("Method : signin() - JWT Token Creation");
+    // Sign the accessToken OR Create accessToken
+    logger.info("Method : signin() - JWT accessToken Creation");
     const jwt = process.env.JWT_SECRET;
-    const token = JWT.sign({ _id: savedUser._id }, jwt, { expiresIn: "1d" });
+    const accessToken = JWT.sign({ _id: savedUser._id }, jwt, { expiresIn: "1d" });
     console.log("User Successfully Registered")
-    // send the token in a HTTP-only cookie
-    return res.cookie("token", token, {
-      httpOnly: true,
-      secure: true,
-      sameSite: "none"
-    }).send({
+
+    // Set the accessToken in a HTTP-only cookie
+    res.cookie("accessToken", accessToken, accessTokenCookieOptions)
+
+    // Set the refreshToken in a HTTP-only cookie
+    // const refreshToken = "mainul"
+    // send the accessToken in a HTTP-only cookie
+    // res.cookie("refreshToken", refreshToken, refreshTokenCookieOptions)
+
+    return res.send({
       success: true,
       message: "User Successfully Registered"
     })

@@ -1,6 +1,9 @@
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
+    picture: {
+        type: String,
+    },
     firstname: {
         type: String,
         minlength: [3, 'firstname must be three characters long'],

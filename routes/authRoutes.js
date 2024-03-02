@@ -13,7 +13,7 @@ router.post('/signup', controller.authCtrl.signupCtrl)
 router.get('/signout', controller.authCtrl.signoutCtrl)
 router.get("/logged-in", loggedIn)
 router.get('/get-current-user', authMiddleware, controller.authCtrl.currentUserCtrl)
-
+router.get('/oauth/google', controller.authCtrl.googleOAuthCtrl)
 
 
 

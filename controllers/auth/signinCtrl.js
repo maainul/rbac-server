@@ -3,7 +3,7 @@ import UserModel from "../../models/User.js";
 import MValidator from "../../validator/MValidator.js";
 import validationLog from "../../utils/validationLog.js";
 import { logger } from "../../middleware/logMiddleware.js";
-import { comparePassword } from "../../utils/authHelper.js";
+import { accessTokenCookieOptions, comparePassword } from "../../utils/authHelper.js";
 
 //
 const validationRulesLogin = {
@@ -59,6 +59,7 @@ export const signinCtrl = async (req, res) => {
         logger.info("Password Check From Compare Password : ");
         logger.info(validPassword);
         logger.info("Method : signin() - Password is valid");
+
         if (!validPassword) {
             logger.info("Wrong Credentials.Password don't Match");
             return res.status(201).send({
@@ -68,21 +69,18 @@ export const signinCtrl = async (req, res) => {
             });
         }
 
-        // Sign in with token
-        logger.info("Method : signin() - JWT Token Creation");
+        // Sign in with accessToken
+        logger.info("Method : signin() - JWT accessToken Creation");
         const jwt = process.env.JWT_SECRET;
-        const token = JWT.sign({ _id: validUser._id }, jwt, {
+        const accessToken = JWT.sign({ _id: validUser._id }, jwt, {
             expiresIn: "1d",
         });
-        logger.info("Method : signin() - Token Created");
+
+        logger.info("Method : signin() - accessToken Created");
         logger.info("Signin Successfull");
 
-        // send the token in the HTTP-only 
-        return res.cookie("token", token, {
-            httpOnly: true,
-            secure: true,
-            sameSite: "none"
-        }).send({
+        // send the accessToken in the HTTP-only 
+        return res.cookie("accessToken", accessToken, accessTokenCookieOptions).send({
             success: true,
             message: "Signin Successfull",
             user: {

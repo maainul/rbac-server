@@ -39,12 +39,20 @@ export const signupCtrl = async (req, res) => {
   try {
     // Validation For Empty and Existing Email
     logger.info("Validation Started");
-    const { picture, username, email, password, confirmPassword } = req.body;
+    let { picture, username, email, password, confirmPassword } = req.body;
+
+    picture = picture.trim()
+    email = email.trim()
+    password = password.trim()
+    confirmPassword = confirmPassword.trim()
+    username = username.trim()
+
     const validationResult = await MValidator(
       req.body,
       validationRules,
       UserModel
     );
+
     // Compare Password and Confirm Password
     if (password !== confirmPassword) {
       validationResult.errors.push({ field: "password", error: "Password don't match" })

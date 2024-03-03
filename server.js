@@ -9,6 +9,7 @@ import connectDB from './config/connectDB.js';
 import routes from "./routes/route.js";
 import dotenv from "dotenv";
 import cookieParser from 'cookie-parser';
+import deserializeUser from './middleware/deserializeUser.js';
 
 //configure env
 dotenv.config()
@@ -46,7 +47,11 @@ const spec = swaggerJSDoc(options)
 //rest object
 const app = express()
 
+
 //middelwares
+
+app.use(deserializeUser)
+
 app.use(morgan('dev'))
 app.use(express.json())
 app.use(cookieParser())

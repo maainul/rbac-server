@@ -1,4 +1,6 @@
 import bcrypt from 'bcrypt'
+import jwt from 'jsonwebtoken'
+import UserModel from '../models/User.js'
 import { logger } from '../middleware/logMiddleware.js'
 
 export const hashPassword = async (pass) => {
@@ -25,9 +27,45 @@ export const comparePassword = async (pass, hp) => {
 }
 
 
-export const createSession = async () => {
-    const session = "Mainul"
-    return session
+export async function validatePassword(username, password) {
+    logger.info("Method : validatePassword() ==>  Start");
+
+    // Check User Exists or Not
+    const validUser = await UserModel.findOne({ username })
+    if (!validUser) return false
+
+    // If User Exists ==> Compare Password
+    const validPassword = await comparePassword(password, validUser.password)
+    if (!validPassword) return false
+
+    return validUser
+}
+
+
+// Sign JWT With a Private Key
+export const signJWT = (user, key, options) => {
+    return jwt.sign(user, key, {
+        ...(options && options),
+        algorithm: 'RS256'
+    })
+}
+
+// VerifyJWT with a Public Key
+export const verifyJWT = async (token) => {
+    try {
+        const decoded = jwt.verify(token, process.env.REACT_APP_JWT_ACCESS_TOKEN_PUBLIC_KEY)
+        return {
+            valid: true,
+            expired: false,
+            decoded
+        }
+    } catch (error) {
+        return {
+            valid: false,
+            expired: error.message === "JWT expired",
+            decoded: null
+        }
+    }
 }
 
 

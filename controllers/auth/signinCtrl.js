@@ -24,7 +24,7 @@ const validationRulesLogin = {
 export const signinCtrl = async (req, res) => {
     try {
         console.log("Singin Server : Signin Ctrl Called")
-        const { username, password } = req.body;
+        let { username, password } = req.body;
         const validationResult = await MValidator(
             req.body,
             validationRulesLogin,
@@ -41,9 +41,11 @@ export const signinCtrl = async (req, res) => {
             });
         }
 
+        username = username.trim()
+        password = password.trim()
+
         logger.info("Method : signin() - Check User Info Start");
         const validUser = await UserModel.findOne({ username });
-        logger.info(validUser);
         logger.info("Method : signin() - Check User Info Start End");
 
         if (!validUser) {

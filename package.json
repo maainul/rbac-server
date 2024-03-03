@@ -28,6 +28,7 @@
     "nodemon": "^3.0.2",
     "react-date-range": "^2.0.0-alpha.4",
     "sib-api-v3-sdk": "^8.5.0",
+    "strip-ansi": "^7.1.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0",
     "winston": "^3.11.0"

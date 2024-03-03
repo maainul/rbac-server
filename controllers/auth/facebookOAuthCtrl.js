@@ -4,12 +4,15 @@ import qs from 'qs'
 import { accessTokenCookieOptions }
     from "../../utils/authHelper.js";
 
-export const googleOAuthCtrl = async (req, res) => {
+export const facebookOAuthCtrl = async (req, res) => {
     try {
-        console.log("Google Auth Controler:  Start")
+        console.log("Facebook Auth Controler:  Start")
 
         //Get the code from querystring
         const code = req.query.code
+        console.log("!@@@@@@@@@@@@@@@@@@@@@@@@@")
+        console.log(code)
+        console.log("!@@@@@@@@@@@@@@@@@@@@@@@@@")
 
         // Get the id and access accessToken with the code
         const { id_token, access_token } = await getGoogleOAuthTokens({ code })
@@ -122,3 +125,4 @@ async function findAndUpdateUser(googleUser) {
 
     return user;
 }
+

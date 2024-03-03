@@ -6,7 +6,7 @@ const MValidator = async (req, validationRules, model) => {
     const data = req
     const errors = [];
     for (const field in validationRules) {
-        const value = data[field]
+        const value = data[field].trim()
         const rules = validationRules[field]
 
         // Check if the field is required

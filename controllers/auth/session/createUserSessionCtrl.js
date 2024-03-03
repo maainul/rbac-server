@@ -1,6 +1,6 @@
 import { logger } from "../../../middleware/logMiddleware.js";
 import UserModel from "../../../models/User.js";
-import { signJWT, validatePassword } from "../../../utils/authHelper.js";
+import { createTokens, setCookies, signJWT, validatePassword } from "../../../utils/authHelper.js";
 import validationLog from "../../../utils/validationLog.js";
 import MValidator from "../../../validator/MValidator.js";
 import { serv } from './../../../service/services.js';
@@ -54,23 +54,11 @@ export const createUserSessionCtrl = async (req, res) => {
         //create a session
         const session = await serv.authService.sessions.createSession(user._id, req.get("user-agent") || "")
 
-        // console.log(req.locals.user)
-        // Add data to req.locals
-        // req.locals.user = user; // Add the user object to req.locals
-
         //crate an access token
-        const accessToken = signJWT(
-            { ...user, session: session._id },
-            process.env.REACT_APP_JWT_ACCESS_TOKEN_PRIVATE_KEY,
-            { expiresIn: process.env.REACT_APP_ACCESS_TOKEN_TIME }, // 15 minutes)
-        )
-
-        // create a refresh token
-        const refreshToken = signJWT(
-            { ...user, session: session._id },
-            process.env.REACT_APP_JWT_REFRESH_TOKEN_PRIVATE_KEY,
-            { expiresIn: process.env.REACT_APP_REFRESH_TOKEN_TIME } // 1 years)
-        )
+        const {accessToken,refreshToken} = createTokens(user,session)
+       
+        // set cookies
+        setCookies(res,accessToken,refreshToken)
 
         // return access and refress token
         return res.send({ accessToken, refreshToken })

@@ -1,6 +1,6 @@
 import { logger } from "../../middleware/logMiddleware.js";
 import UserModel from "../../models/User.js";
-import { accessTokenCookieOptions, hashPassword } from "../../utils/authHelper.js";
+import { accessTokenCookieOptions, createTokens, hashPassword, setCookies } from "../../utils/authHelper.js";
 import MValidator from "../../validator/MValidator.js";
 import JWT from 'jsonwebtoken';
 
@@ -85,24 +85,27 @@ export const signupCtrl = async (req, res) => {
     })
     const savedUser = await newUser.save()
 
-    // Sign the accessToken OR Create accessToken
-    logger.info("Method : signin() - JWT accessToken Creation");
-    const jwt = process.env.JWT_SECRET;
-    const accessToken = JWT.sign({ _id: savedUser._id }, jwt, { expiresIn: "1d" });
-    console.log("User Successfully Registered")
+    //create a session
+    const session = await serv.authService.sessions.createSession(user._id, req.get("user-agent") || "")
+    
+    //crate an access token
+    const {accessToken,refreshToken} = createTokens(savedUser,session)
 
-    // Set the accessToken in a HTTP-only cookie
-    res.cookie("accessToken", accessToken, accessTokenCookieOptions)
-
-    // Set the refreshToken in a HTTP-only cookie
-    // const refreshToken = "mainul"
-    // send the accessToken in a HTTP-only cookie
-    // res.cookie("refreshToken", refreshToken, refreshTokenCookieOptions)
-
-    return res.send({
-      success: true,
-      message: "User Successfully Registered"
-    })
+    // set cookies
+    setCookies(res,accessToken,refreshToken)
+    
+    // return access and refress token
+      return res.send({ accessToken, refreshToken }).send({
+          success: true,
+          message: "Signup Successfull",
+          user: {
+              _id: savedUser._id,
+              username: savedUser.username,
+              email: savedUser.email,
+              mobileNumber: savedUser.mobileNumber,
+              role: savedUser.role,
+          }
+        })
 
   } catch (error) {
     logger.error("Errror in Uer Registration");

@@ -1415,3 +1415,5 @@
 2024-03-02T07:11:44.450Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
 2024-03-02T07:14:00.162Z info: [1m[43mTrying to Connect Mongo DB ....[49m[22m
 2024-03-02T07:14:00.273Z info: [37m[45mConneted To Mongodb Databse 127.0.0.1[49m[39m
+2024-03-04T07:21:59.975Z info: Trying to Connect Mongo DB ....
+2024-03-04T07:22:00.348Z info: Conneted To Mongodb Databse 127.0.0.1

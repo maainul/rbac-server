@@ -1,6 +1,4 @@
-
-import SessionModel from "../../../models/Session.js";
-
+import SessionModel from "../../../models/Session.js"
 
 export async function createSession(userId, userAgent) {
     const session = await SessionModel.create({ user: userId, userAgent })

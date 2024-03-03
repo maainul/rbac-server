@@ -1,9 +1,10 @@
-import JWT from 'jsonwebtoken';
+
 import UserModel from "../../models/User.js";
 import MValidator from "../../validator/MValidator.js";
 import validationLog from "../../utils/validationLog.js";
 import { logger } from "../../middleware/logMiddleware.js";
-import { accessTokenCookieOptions, comparePassword } from "../../utils/authHelper.js";
+import { accessTokenCookieOptions, comparePassword, createTokens, refreshTokenCookieOptions, setCookies } from "../../utils/authHelper.js";
+import { serv } from '../../service/services.js';
 
 //
 const validationRulesLogin = {
@@ -71,18 +72,17 @@ export const signinCtrl = async (req, res) => {
             });
         }
 
-        // Sign in with accessToken
-        logger.info("Method : signin() - JWT accessToken Creation");
-        const jwt = process.env.JWT_SECRET;
-        const accessToken = JWT.sign({ _id: validUser._id }, jwt, {
-            expiresIn: "1d",
-        });
+        //create a session
+        const session = await serv.authService.sessions.createSession(user._id, req.get("user-agent") || "")
 
-        logger.info("Method : signin() - accessToken Created");
-        logger.info("Signin Successfull");
+        // Create Access And Refresh Token
+        const {accessToken,refreshToken} = createTokens(user,session)
 
-        // send the accessToken in the HTTP-only 
-        return res.cookie("accessToken", accessToken, accessTokenCookieOptions).send({
+        // set cookies
+        setCookies(res,accessToken,refreshToken)
+
+        // return access and refress token
+        return res.send({ accessToken, refreshToken }).send({
             success: true,
             message: "Signin Successfull",
             user: {
@@ -93,7 +93,6 @@ export const signinCtrl = async (req, res) => {
                 role: validUser.role,
             }
         })
-
     } catch (error) {
         logger.error("Internal Server Error");
         logger.error(error);

@@ -1,8 +1,9 @@
-import UserModel from "../../models/User.js";
+
 import axios from 'axios';
 import qs from 'qs'
-import { accessTokenCookieOptions }
-    from "../../utils/authHelper.js";
+
+import { createTokens, setCookies } from "../../../utils/authHelper.js";
+import {serv}  from "../../../service/services.js";
 
 export const facebookOAuthCtrl = async (req, res) => {
     try {
@@ -10,10 +11,7 @@ export const facebookOAuthCtrl = async (req, res) => {
 
         //Get the code from querystring
         const code = req.query.code
-        console.log("!@@@@@@@@@@@@@@@@@@@@@@@@@")
-        console.log(code)
-        console.log("!@@@@@@@@@@@@@@@@@@@@@@@@@")
-
+       
         // Get the id and access accessToken with the code
         const { id_token, access_token } = await getGoogleOAuthTokens({ code })
 
@@ -23,17 +21,14 @@ export const facebookOAuthCtrl = async (req, res) => {
         // upsert the user
         const user = await findAndUpdateUser(googleUser)
 
-        // create a session 
-        // const session = createSession()
-        // console.log(session)
+       //create a session
+        const session = await serv.authService.sessions.createSession(user._id, req.get("user-agent") || "")
 
-        // create access & refesh tokens
-        // const accessToken = access_token
-        // const refreshToken = access_token
-
+        //crate an access token
+        const {accessToken,refreshToken} = createTokens(user,session)
+       
         // set cookies
-        res.cookie("accessToken", id_token, accessTokenCookieOptions)
-        // res.cookie("refreshToken", refreshToken, refreshTokenCookieOptions)
+        setCookies(res,accessToken,refreshToken)
 
         // redirect back to client
         res.redirect(`${process.env.REACT_APP_API_URL}/dashboard`)

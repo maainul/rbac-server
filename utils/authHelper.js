@@ -81,3 +81,29 @@ export const refreshTokenCookieOptions = {
     ...accessTokenCookieOptions,
     maxAge: 3.154e10, // 1 Year
 }
+
+
+export const createTokens = (user,session) =>{
+    const accessToken = signJWT(
+        { ...user, session: session._id },
+         process.env.REACT_APP_JWT_ACCESS_TOKEN_PRIVATE_KEY,
+        { expiresIn: process.env.REACT_APP_ACCESS_TOKEN_TIME }, // 15 minutes)
+    )
+      // create a refresh token
+    const refreshToken = signJWT(
+        { ...user, session: session._id },
+        process.env.REACT_APP_JWT_REFRESH_TOKEN_PRIVATE_KEY,
+        { expiresIn: process.env.REACT_APP_REFRESH_TOKEN_TIME } // 1 years)
+    )
+
+    return { accessToken, refreshToken };
+}
+
+  
+// Separate function for setting cookies
+export const setCookies = (res, accessToken, refreshToken) => {
+    res.cookie("accessToken", accessToken, accessTokenCookieOptions);
+    res.cookie("refreshToken", refreshToken, refreshTokenCookieOptions);
+};
+
+     

@@ -21,7 +21,7 @@ router.delete('/session', requireUser, controller.authCtrl.deleteUserSessionCtrl
 router.get("/logged-in", loggedIn)
 
 // OAUTH
-router.get('/get-current-user', authMiddleware, controller.authCtrl.currentUserCtrl)
+router.get('/me', requireUser, controller.authCtrl.getCurrentUserCtrl)
 router.get('/oauth/google', controller.authCtrl.googleOAuthCtrl)
 router.get('/oauth/facebook', controller.authCtrl.facebookOAuthCtrl)
 

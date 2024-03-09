@@ -5,7 +5,8 @@ import { verifyJWT } from "../utils/authHelper.js";
 
 const deserializeUser = async (req, res, next) => {
 
-    const accessToken = req.cookie.accessToken || ((req.headers && req.headers.authorization) || "").replace(/^Bearer\s/, "");
+    // const accessToken = req.cookie.accessToken || ((req.headers && req.headers.authorization) || "").replace(/^Bearer\s/, "");
+    const accessToken = ((req.headers && req.headers.authorization) || "").replace(/^Bearer\s/, "");
     const refreshToken =  req.cookie.refreshToken ||  req.get('x-refresh')
 
     if (!accessToken) return next()

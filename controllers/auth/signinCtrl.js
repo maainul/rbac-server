@@ -60,8 +60,7 @@ export const signinCtrl = async (req, res) => {
         logger.info("Method : signin() - Compare Password with the server");
         const validPassword = await comparePassword(password, validUser.password);
         logger.info("Password Check From Compare Password : ");
-        logger.info(validPassword);
-        logger.info("Method : signin() - Password is valid");
+        logger.info(`Password Valid = ${validPassword}`);
 
         if (!validPassword) {
             logger.info("Wrong Credentials.Password don't Match");
@@ -73,13 +72,13 @@ export const signinCtrl = async (req, res) => {
         }
 
         //create a session
-        const session = await serv.authService.sessions.createSession(user._id, req.get("user-agent") || "")
+        const session = await serv.authService.sessions.createSession(validUser._id, req.get("user-agent") || "")
 
         // Create Access And Refresh Token
-        const {accessToken,refreshToken} = createTokens(user,session)
+        const { accessToken, refreshToken } = createTokens(validUser, session)
 
         // set cookies
-        setCookies(res,accessToken,refreshToken)
+        setCookies(res, accessToken, refreshToken)
 
         // return access and refress token
         return res.send({ accessToken, refreshToken }).send({

@@ -1,5 +1,6 @@
 import { logger } from "../../middleware/logMiddleware.js";
 import UserModel from "../../models/User.js";
+import { serv } from "../../service/services.js";
 import { accessTokenCookieOptions, createTokens, hashPassword, setCookies } from "../../utils/authHelper.js";
 import MValidator from "../../validator/MValidator.js";
 import JWT from 'jsonwebtoken';
@@ -41,11 +42,11 @@ export const signupCtrl = async (req, res) => {
     logger.info("Validation Started");
     let { picture, username, email, password, confirmPassword } = req.body;
 
-    picture = picture.trim()
-    email = email.trim()
-    password = password.trim()
-    confirmPassword = confirmPassword.trim()
-    username = username.trim()
+    // picture = picture.trim()
+    // email = email.trim()
+    // password = password.trim()
+    // confirmPassword = confirmPassword.trim()
+    // username = username.trim()
 
     const validationResult = await MValidator(
       req.body,
@@ -86,26 +87,26 @@ export const signupCtrl = async (req, res) => {
     const savedUser = await newUser.save()
 
     //create a session
-    const session = await serv.authService.sessions.createSession(user._id, req.get("user-agent") || "")
-    
+    const session = await serv.authService.sessions.createSession(savedUser._id, req.get("user-agent") || "")
+
     //crate an access token
-    const {accessToken,refreshToken} = createTokens(savedUser,session)
+    const { accessToken, refreshToken } = createTokens(savedUser, session)
 
     // set cookies
-    setCookies(res,accessToken,refreshToken)
-    
+    setCookies(res, accessToken, refreshToken)
+
     // return access and refress token
-      return res.send({ accessToken, refreshToken }).send({
-          success: true,
-          message: "Signup Successfull",
-          user: {
-              _id: savedUser._id,
-              username: savedUser.username,
-              email: savedUser.email,
-              mobileNumber: savedUser.mobileNumber,
-              role: savedUser.role,
-          }
-        })
+    return res.send({ accessToken, refreshToken }).send({
+      success: true,
+      message: "Signup Successfull",
+      user: {
+        _id: savedUser._id,
+        username: savedUser.username,
+        email: savedUser.email,
+        mobileNumber: savedUser.mobileNumber,
+        role: savedUser.role,
+      }
+    })
 
   } catch (error) {
     logger.error("Errror in Uer Registration");

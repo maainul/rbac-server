@@ -2,6 +2,8 @@ import UserModel from "../../models/User.js";
 
 export const listUserCtrl = async (req, res) => {
     try {
+        console.log("########################")
+        console.log("########################")
         const ulist = await UserModel.find()
         ulist.password = undefined
         console.error('Get All User:', ulist)

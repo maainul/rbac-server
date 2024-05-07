@@ -10,7 +10,9 @@ const router = Router()
 
 
 // USER
-router.use('/user', authMiddleware, userRouter)
+router.use('/user', 
+// authMiddleware, 
+userRouter)
 
 // Application Router
 router.use('/application-route', authMiddleware, applicationRoute)
